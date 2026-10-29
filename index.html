@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TabiGo — eSIM Du Lịch Quốc Tế 150+ Quốc Gia | Chạm Là Có Internet</title>
+  <title>TabiGo — eSIM du lịch quốc tế, chạm là có Internet toàn cầu</title>
 
   <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300C8FF'/%3E%3Cstop offset='50%25' stop-color='%2300A8FF'/%3E%3Cstop offset='100%25' stop-color='%230066CC'/%3E%3C/linearGradient%3E%3ClinearGradient id='orbit' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23FFFFFF' stop-opacity='0.95'/%3E%3Cstop offset='100%25' stop-color='%23FFFFFF' stop-opacity='0.3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)'/%3E%3Ccircle cx='32' cy='32' r='19' fill='%230080FF' opacity='0.4'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23FFFFFF' stroke-width='2.5' opacity='0.9'/%3E%3Cellipse cx='32' cy='32' rx='9' ry='18' fill='none' stroke='%23FFFFFF' stroke-width='1.8' opacity='0.75'/%3E%3Cline x1='14' y1='32' x2='50' y2='32' stroke='%23FFFFFF' stroke-width='1.8' opacity='0.75'/%3E%3Cellipse cx='32' cy='32' rx='26' ry='9' fill='none' stroke='url(%23orbit)' stroke-width='2.2' transform='rotate(-30 32 32)'/%3E%3Ccircle cx='51' cy='21' r='3.5' fill='%23FFAA00'/%3E%3Ccircle cx='51' cy='21' r='1.5' fill='%23FFEAA7'/%3E%3C/svg%3E" />
   <link rel="icon" type="image/png" sizes="48x48" href="./assets/images/tabigo_favicon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/tabigo_logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/tabigo_logo.png" />
@@ -13,15 +14,15 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="TabiGo - Ứng dụng eSIM du lịch quốc tế, chạm là có Internet toàn cầu tại 150+ quốc gia. Kích hoạt siêu tốc trong 1 phút, không lo tháo SIM, hỗ trợ 24/7. Tải TabiGo nhận ngay ưu đãi 10%." />
-  <meta name="keywords" content="TabiGo, Tabi Go, eSIM du lịch, mua eSIM quốc tế, eSIM Nhật Bản, eSIM Hàn Quốc, eSIM Châu Âu, SIM du lịch giá rẻ, 3M" />
+  <meta name="keywords" content="TabiGo, Tabi Go, eSIM du lịch, mua eSIM quốc tế, eSIM Nhật Bản, eSIM Hàn Quốc, eSIM Châu Âu, SIM du lịch giá rẻ, 3M, eSIM 3M" />
   <meta name="author" content="TabiGo - 3M Ecosystem" />
   <meta name="theme-color" content="#00478F" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="TabiGo" />
   <meta property="og:title" content="TabiGo — eSIM du lịch, chạm là có Internet toàn cầu" />
-  <meta property="og:description" content="Ứng dụng mua eSIM & SIM du lịch giá gốc cho 150+ quốc gia. Kích hoạt tức thì 1-tap, không tháo SIM, hỗ trợ 24/7." />
+  <meta property="og:description" content="Ứng dụng mua eSIM & SIM du lịch giá gốc cho 150+ quốc gia. Kích hoạt tức thì 1-tap, không tháo SIM, bảo hiểm kết nối 24/7." />
   <meta property="og:image" content="./assets/images/tabigo_og_banner.png" />
 
   <!-- Google Fonts: Plus Jakarta Sans -->
@@ -36,201 +37,110 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
           },
           colors: {
             tabi: {
-              navy: '#00478F',        // Deep Royal Navy from "Tabi" logo
-              darkNavy: '#002B59',
-              blue: '#007CE8',        // Primary App Blue
-              sky: '#00A8FF',         // Sky Blue from "Go" logo
-              cyan: '#00C8FF',        // Vibrant Cyan highlight
-              orange: '#FF9500',      // Warm Orange from Paper Plane logo accent
-              amber: '#FFAA00',
-              coral: '#FF7A45',
-              mint: '#10B981',
-            },
+              navy: "#00478F",      // Deep Royal Navy from "Tabi" logo
+              darkNavy: "#002B59",
+              blue: "#007CE8",      // Primary App Blue
+              sky: "#00A8FF",       // Sky Blue from "Go" logo
+              cyan: "#00C8FF",      // Vibrant Cyan highlight
+              orange: "#FF9500",    // Warm Orange from Paper Plane logo accent
+              amber: "#FFAA00",
+              coral: "#FF6B00",
+              mint: "#10B981"
+            }
           },
           animation: {
-            'float-slow': 'floatSlow 7s ease-in-out infinite',
-            'float-rev': 'floatRev 8s ease-in-out infinite',
-            'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
-            'plane-fly': 'planeFly 4s ease-in-out infinite',
-            'ambient-blob': 'ambientBlob 14s ease-in-out infinite alternate',
+            "float-slow": "float 6s ease-in-out infinite",
+            "float-rev": "floatRev 7s ease-in-out infinite",
+            "pulse-glow": "pulseGlow 3s ease-in-out infinite",
+            "ambient-blob": "blobFloat 12s ease-in-out infinite alternate",
+            "plane-fly": "planeFly 4s ease-in-out infinite",
+            "marquee": "marqueeScroll 35s linear infinite"
           },
           keyframes: {
-            floatSlow: {
-              '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
-              '50%': { transform: 'translate3d(0, -12px, 0)' },
+            float: {
+              "0%, 100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(-10px)" }
             },
             floatRev: {
-              '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
-              '50%': { transform: 'translate3d(0, 12px, 0)' },
+              "0%, 100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(8px)" }
             },
             pulseGlow: {
-              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
-              '50%': { opacity: '0.75', transform: 'scale(1.08)' },
+              "0%, 100%": { opacity: "0.45", transform: "scale(1)" },
+              "50%": { opacity: "0.85", transform: "scale(1.08)" }
+            },
+            blobFloat: {
+              "0%": { transform: "translate(0px, 0px) scale(1)" },
+              "50%": { transform: "translate(40px, -25px) scale(1.06)" },
+              "100%": { transform: "translate(-30px, 20px) scale(0.96)" }
             },
             planeFly: {
-              '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
-              '50%': { transform: 'translate(6px, -8px) rotate(5deg)' },
+              "0%, 100%": { transform: "translate(0, 0) rotate(-12deg)" },
+              "50%": { transform: "translate(3px, -3px) rotate(-8deg)" }
             },
-            ambientBlob: {
-              '0%': { transform: 'translate(0px, 0px) scale(1)' },
-              '50%': { transform: 'translate(30px, -25px) scale(1.12)' },
-              '100%': { transform: 'translate(-25px, 20px) scale(0.95)' },
-            },
-          },
-        },
-      },
+            marqueeScroll: {
+              "0%": { transform: "translateX(0)" },
+              "100%": { transform: "translateX(-50%)" }
+            }
+          }
+        }
+      }
     };
   </script>
 
   <style>
+    /* ==================================================== */
+    /* LUXURY DAYLIGHT CANVAS & MATERIALITY TOKENS          */
+    /* ==================================================== */
     :root {
-      --bg-page: #F6FAFE;
-      --bg-surface: #FFFFFF;
-      --tabi-navy: #003B75;
-      --tabi-darkNavy: #002244;
-      --tabi-blue: #006EDC;
-      --tabi-sky: #00A3FF;
-      --tabi-cyan: #00D5FF;
-      --tabi-orange: #FF7700;
-      --tabi-amber: #FFA800;
+      --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     body {
-      background-color: var(--bg-page);
-      background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 168, 255, 0.08) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(255, 149, 0, 0.065) 0px, transparent 45%),
-        radial-gradient(at 50% 50%, rgba(0, 124, 232, 0.04) 0px, transparent 55%),
-        radial-gradient(at 100% 100%, rgba(0, 200, 255, 0.07) 0px, transparent 50%),
-        radial-gradient(circle at 1px 1px, rgba(0, 71, 143, 0.055) 1px, transparent 0);
-      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 28px 28px;
-      background-attachment: fixed;
+      background-color: #F8FAFD;
       color: #0F172A;
       font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
     }
 
-    /* ==================================================== */
-    /* LUMINOUS FROSTED GLASS & MULTI-LAYER SHADOWS        */
-    /* ==================================================== */
-    .impeccable-card {
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.95);
-      box-shadow: 
-        0 2px 6px rgba(0, 43, 89, 0.03),
-        0 12px 28px -4px rgba(0, 59, 117, 0.07),
-        0 28px 56px -12px rgba(0, 163, 255, 0.09),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-      transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-                  box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.25s ease;
-      will-change: transform, box-shadow;
-      transform-style: preserve-3d;
-    }
-    .impeccable-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(0, 163, 255, 0.5);
-      box-shadow: 
-        0 4px 12px rgba(0, 43, 89, 0.05),
-        0 18px 38px -4px rgba(0, 110, 220, 0.18),
-        0 36px 72px -12px rgba(0, 163, 255, 0.22),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-    }
-
-    .impeccable-featured {
-      background: rgba(255, 255, 255, 0.94);
-      border: 2px solid rgba(0, 163, 255, 0.85);
-      box-shadow: 
-        0 4px 12px rgba(0, 43, 89, 0.06),
-        0 20px 45px -6px rgba(0, 124, 232, 0.26),
-        0 44px 88px -16px rgba(0, 71, 143, 0.22),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-    }
-
-    /* Smooth FAQ Accordion Transition */
-    .faq-item {
-      cursor: pointer;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-    }
-    .faq-item:hover {
-      border-color: rgba(0, 163, 255, 0.4);
-    }
-    .faq-chevron {
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .faq-content {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.32s ease;
-      opacity: 0;
-    }
-    .faq-content.is-open {
-      grid-template-rows: 1fr;
-      opacity: 1;
-    }
-    .faq-content-inner {
+    /* Living Canvas: Aurora Gradients & Dot-Matrix Substrate */
+    .bg-mesh-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+      background: 
+        radial-gradient(circle at 18% 12%, rgba(224, 242, 254, 0.75) 0%, transparent 45%),
+        radial-gradient(circle at 85% 18%, rgba(254, 243, 199, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 50% 65%, rgba(207, 250, 254, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 82% 88%, rgba(224, 242, 254, 0.7) 0%, transparent 45%),
+        #F8FAFD;
     }
 
-    /* Apple-style Spotlight Surface & Border Sheen */
-    .apple-spotlight-card {
-      position: relative;
-      overflow: hidden;
-      --mouse-x: -500px;
-      --mouse-y: -500px;
-    }
-    .apple-spotlight-card::before {
-      content: '';
+    .bg-mesh-canvas::before {
+      content: "";
       position: absolute;
       inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(460px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(0, 168, 255, 0.16), transparent 50%);
+      background-image: radial-gradient(rgba(0, 71, 143, 0.045) 1px, transparent 1px);
+      background-size: 28px 28px;
       pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.35s ease;
-      z-index: 2;
-    }
-    .apple-spotlight-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      padding: 1.5px;
-      background: radial-gradient(360px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(0, 168, 255, 0.7), transparent 60%);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.35s ease;
-      z-index: 3;
-    }
-    .apple-spotlight-card:hover::before,
-    .apple-spotlight-card:hover::after {
-      opacity: 1;
     }
 
-    /* Glass Effect Light */
-    .glass-card-light {
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.9);
-    }
-
-    /* Luxury Gradient Typography */
-    .text-gradient-navy {
-      background: linear-gradient(135deg, #002244 0%, #003B75 50%, #006EDC 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    /* Multi-Stop Gradient Typography */
     .text-gradient-sky {
-      background: linear-gradient(135deg, #00478F 0%, #007CE8 45%, #00C8FF 100%);
+      background: linear-gradient(135deg, #00478F 0%, #007CE8 45%, #00A8FF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -240,297 +150,166 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* Apple-style Animated Shimmer Headlines */
-    .shimmer-text-sky {
-      background: linear-gradient(120deg, #003B75 0%, #007CE8 30%, #00D5FF 50%, #007CE8 70%, #003B75 100%);
-      background-size: 250% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textShimmer 6s ease-in-out infinite;
-    }
-    .shimmer-text-orange {
-      background: linear-gradient(120deg, #FF5500 0%, #FF8800 35%, #FFAE00 50%, #FF8800 70%, #FF5500 100%);
-      background-size: 250% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textShimmer 5s ease-in-out infinite;
-    }
-    @keyframes textShimmer {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* Titanium Store Buttons */
-    .btn-store-titanium {
-      background: linear-gradient(180deg, #1A2433 0%, #0B111C 100%);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      box-shadow: 0 10px 24px -4px rgba(11, 17, 28, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.18);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .btn-store-titanium:hover {
-      transform: translateY(-2px);
-      border-color: rgba(0, 168, 255, 0.6);
-      box-shadow: 0 14px 32px -4px rgba(0, 124, 232, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    }
-
-    /* Holographic Iridescent QR Card */
-    .qr-holo-card {
-      position: relative;
-      padding: 3px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #00C8FF 0%, #007CE8 50%, #FF9500 100%);
-      box-shadow: 0 8px 24px -4px rgba(0, 110, 220, 0.22);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .qr-holo-card:hover {
-      transform: scale(1.04) rotate(-1deg);
-      box-shadow: 0 14px 32px -4px rgba(0, 168, 255, 0.35);
-    }
-    .qr-holo-inner {
-      background: #FFFFFF;
-      border-radius: 17px;
-      padding: 8px;
-    }
-
-    /* Category Pill Badge */
+    /* Luxury Luminous Category Pill Badge */
     .luxury-pill-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 5px 14px;
+      gap: 0.5rem;
+      padding: 0.35rem 0.95rem;
       border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(0, 168, 255, 0.25);
-      box-shadow: 0 2px 10px rgba(0, 110, 220, 0.08);
-      font-size: 11px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(0, 168, 255, 0.22);
+      box-shadow: 
+        0 2px 6px -1px rgba(0, 71, 143, 0.08),
+        0 4px 14px -2px rgba(0, 168, 255, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      font-size: 0.75rem;
       font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      transition: all 0.3s ease;
+    }
+    .luxury-pill-badge:hover {
+      border-color: rgba(0, 168, 255, 0.45);
+      box-shadow: 
+        0 4px 12px -1px rgba(0, 71, 143, 0.12),
+        0 8px 20px -3px rgba(0, 168, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      transform: translateY(-1px);
     }
 
-    /* ==================================================== */
-    /* APPLE SCROLL REVEAL ENGINE (CINEMATIC FOCUS BLUR-IN) */
-    /* ==================================================== */
-    .apple-reveal {
-      opacity: 0;
-      filter: blur(8px);
-      transform: translateY(22px) scale(0.985);
-      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                  filter 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: opacity, filter, transform;
+    /* Impeccable Multi-Layer Diffusion Box Shadows */
+    .impeccable-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      box-shadow:
+        0 1px 2px 0 rgba(0, 43, 89, 0.04),
+        0 4px 16px -2px rgba(0, 71, 143, 0.06),
+        0 12px 32px -4px rgba(0, 168, 255, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      transition: transform 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple), border-color 0.4s ease;
+      will-change: transform, box-shadow;
     }
-    .apple-reveal.is-visible {
-      opacity: 1;
-      filter: blur(0px);
-      transform: translateY(0) scale(1);
-    }
-    .delay-75  { transition-delay: 75ms; }
-    .delay-100 { transition-delay: 100ms; }
-    .delay-150 { transition-delay: 150ms; }
-    .delay-200 { transition-delay: 200ms; }
-    .delay-225 { transition-delay: 225ms; }
-    .delay-250 { transition-delay: 250ms; }
-    .delay-300 { transition-delay: 300ms; }
-    .delay-375 { transition-delay: 375ms; }
-    .delay-400 { transition-delay: 400ms; }
-
-    /* Once revealed, item boxes transition instantly and smoothly on hover */
-    .apple-reveal.is-visible.impeccable-card {
-      transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-                  box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.25s ease,
-                  opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                  filter 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    .impeccable-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 168, 255, 0.35);
+      box-shadow:
+        0 2px 4px 0 rgba(0, 43, 89, 0.06),
+        0 12px 28px -4px rgba(0, 71, 143, 0.12),
+        0 24px 48px -6px rgba(0, 168, 255, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
     }
 
-    /* ==================================================== */
-    /* HERO 3D MOUSE & SCROLL PARALLAX RIG                  */
-    /* ==================================================== */
+    /* Apple Titanium Store Action Buttons */
+    .btn-store-titanium {
+      background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.15),
+        0 8px 20px -3px rgba(15, 23, 42, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      transition: all 0.3s var(--ease-apple);
+    }
+    .btn-store-titanium:hover {
+      background: linear-gradient(180deg, #334155 0%, #1E293B 100%);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 14px 28px -4px rgba(15, 23, 42, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    /* Holographic Desktop QR Card */
+    .qr-holo-card {
+      position: relative;
+      padding: 2px;
+      border-radius: 1.25rem;
+      background: linear-gradient(135deg, rgba(0, 168, 255, 0.5) 0%, rgba(255, 149, 0, 0.4) 50%, rgba(0, 71, 143, 0.5) 100%);
+      box-shadow: 
+        0 4px 16px -2px rgba(0, 168, 255, 0.2),
+        0 8px 24px -4px rgba(0, 71, 143, 0.15);
+      transition: all 0.35s var(--ease-apple);
+    }
+    .qr-holo-card:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 
+        0 6px 20px -2px rgba(0, 168, 255, 0.3),
+        0 12px 32px -4px rgba(255, 149, 0, 0.25);
+    }
+    .qr-holo-inner {
+      background: #FFFFFF;
+      border-radius: 1.15rem;
+      padding: 0.35rem;
+    }
+
+    /* Live Marquee Ticker Track */
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 32s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track {
+        animation: none !important;
+      }
+    }
+
+    /* Hero Phone Rig Unclipped 3D Perspective */
     .hero-perspective-stage {
-      perspective: 1200px;
-      perspective-origin: center 40%;
+      perspective: 1400px;
       transform-style: preserve-3d;
     }
     .hero-phone-rig {
       transform-style: preserve-3d;
+      transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.4, 1);
       will-change: transform;
-      transition: transform 0.12s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-    .hero-parallax-badge-1 {
-      transform-style: preserve-3d;
-      transform: translateZ(60px);
-      will-change: transform;
-      transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-    .hero-parallax-badge-2 {
-      transform-style: preserve-3d;
-      transform: translateZ(75px);
-      will-change: transform;
-      transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-    /* ==================================================== */
-    /* 3D CIRCULAR COVERFLOW DESTINATION CAROUSEL           */
-    /* ==================================================== */
-    .dest-carousel-stage {
-      position: relative;
-      height: 480px;
-      perspective: 1400px;
-      perspective-origin: center 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      touch-action: pan-y;
-      outline: none;
-    }
-    @media (max-width: 640px) {
-      .dest-carousel-stage { height: 420px; }
     }
 
-    .dest-carousel-card {
-      position: absolute;
-      width: 290px;
-      height: 410px;
-      border-radius: 28px;
-      overflow: hidden;
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
-      isolation: isolate;
-      cursor: pointer;
-      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-                  opacity 0.7s ease,
-                  box-shadow 0.7s ease,
-                  filter 0.7s ease;
-      will-change: transform, opacity;
-      user-select: none;
-    }
-    @media (max-width: 640px) {
-      .dest-carousel-card {
-        width: 260px;
-        height: 380px;
-      }
-    }
-
-    .dest-carousel-card.is-active {
-      cursor: default;
-      box-shadow: 
-        0 14px 32px rgba(0, 43, 89, 0.1),
-        0 32px 75px -10px rgba(0, 124, 232, 0.35),
-        0 0 0 2px rgba(0, 163, 255, 0.85),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-    }
-
-    /* Double-containment image wrapper to strictly prevent overflow on hover */
-    .dest-carousel-card .dest-img-wrap {
-      position: relative;
-      width: 100%;
-      height: 60%;
-      overflow: hidden;
-      border-top-left-radius: 28px;
-      border-top-right-radius: 28px;
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
-      isolation: isolate;
-    }
-    .dest-carousel-card .dest-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-top-left-radius: 28px;
-      border-top-right-radius: 28px;
-      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .dest-carousel-card:hover .dest-img {
-      transform: scale(1.08);
-    }
-
-    /* ==================================================== */
-    /* BENTO INTERACTIVE PHONE SCREEN VIEWPORT              */
-    /* ==================================================== */
-    .bento-mockup-frame {
-      position: relative;
-      width: 295px;
-      height: 595px;
-      border-radius: 50px;
-      background: #0B1F3A;
-      padding: 10px;
-      box-shadow: 
-        0 12px 36px rgba(0, 43, 89, 0.28),
-        0 32px 85px -15px rgba(0, 43, 89, 0.45),
-        inset 0 0 0 1.5px rgba(255, 255, 255, 0.2),
-        inset 0 0 0 4px #061224;
-      margin: 0 auto;
-    }
-    .bento-screens-viewport {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 40px;
-      overflow: hidden;
-      background: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-    }
-    .bento-screen {
-      position: absolute;
-      inset: 0;
+    /* Apple-Grade Kinetic Reveal Cascade */
+    .apple-reveal {
       opacity: 0;
-      transform: translateY(18px) scale(0.97);
-      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-      display: flex;
-      flex-direction: column;
+      transform: translateY(28px) scale(0.98);
+      filter: blur(8px);
+      transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple), filter 0.8s var(--ease-apple);
+      will-change: opacity, transform, filter;
     }
-    .bento-screen.is-active {
+    .apple-reveal.is-visible {
       opacity: 1;
       transform: translateY(0) scale(1);
-      pointer-events: auto;
+      filter: blur(0px);
     }
+    .apple-reveal.delay-100 { transition-delay: 100ms; }
+    .apple-reveal.delay-200 { transition-delay: 200ms; }
+    .apple-reveal.delay-300 { transition-delay: 300ms; }
 
+    /* Bento Grid Feature Deck & Interactive Phone Frame */
     .bento-feature-card {
       position: relative;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 1.25rem;
       cursor: pointer;
-      border: 1.5px solid rgba(0, 71, 143, 0.09);
-      background: #FFFFFF;
+      transition: all 0.3s var(--ease-apple);
       overflow: hidden;
-      box-shadow: 
-        0 1px 3px rgba(0, 43, 89, 0.04),
-        0 8px 24px -4px rgba(0, 43, 89, 0.08),
-        0 20px 40px -12px rgba(0, 71, 143, 0.10),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease,
-                  box-shadow 0.35s ease,
-                  background 0.35s ease;
     }
     .bento-feature-card:hover {
-      border-color: rgba(0, 168, 255, 0.5);
-      background: #F8FBFE;
-      transform: translateX(6px);
-      box-shadow: 
-        0 2px 8px rgba(0, 43, 89, 0.05),
-        0 14px 30px -6px rgba(0, 124, 232, 0.16),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
+      background: #FFFFFF;
+      border-color: rgba(0, 168, 255, 0.4);
+      transform: translateX(4px);
+      box-shadow: 0 8px 24px -4px rgba(0, 71, 143, 0.1);
     }
     .bento-feature-card.is-active {
-      border-color: #00A3FF;
-      background: linear-gradient(135deg, rgba(235, 246, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
-      transform: translateX(8px);
+      background: #FFFFFF;
+      border-color: #00A8FF;
       box-shadow: 
-        0 4px 16px rgba(0, 43, 89, 0.06),
-        0 20px 42px -6px rgba(0, 124, 232, 0.22),
-        inset 4px 0 0 #00A3FF;
-    }
-
-    /* Active country button gradient */
-    .calc-country-btn.is-active {
-      background: linear-gradient(135deg, #0056B3 0%, #0088FF 100%) !important;
-      color: #FFFFFF !important;
-      border-color: transparent !important;
-      box-shadow: 0 8px 20px -3px rgba(0, 110, 220, 0.38) !important;
-      transform: translateY(-2px);
+        0 0 0 1.5px #00A8FF,
+        0 12px 32px -4px rgba(0, 168, 255, 0.22);
     }
     .bento-progress-track {
       position: absolute;
@@ -550,6 +329,91 @@
       width: 0%;
       background: linear-gradient(90deg, #00A8FF, #00C8FF);
       border-radius: 999px;
+    }
+
+    /* iPhone 16 Pro Mockup Frame in Bento */
+    .bento-mockup-frame {
+      width: 295px;
+      height: 595px;
+      border-radius: 50px;
+      background: #1E293B;
+      padding: 10px;
+      box-shadow: 
+        0 0 0 2px #475569,
+        0 25px 65px -10px rgba(0, 43, 89, 0.4),
+        0 15px 35px -5px rgba(0, 168, 255, 0.2);
+      position: relative;
+    }
+    .bento-screens-viewport {
+      width: 100%;
+      height: 100%;
+      background: #F8FAFD;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .bento-screen {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.96) translateY(8px);
+      transition: opacity 0.4s var(--ease-apple), transform 0.4s var(--ease-apple);
+    }
+    .bento-screen.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
+    }
+
+    /* Coverflow 3D Carousel Stage */
+    .dest-carousel-stage {
+      perspective: 1200px;
+      transform-style: preserve-3d;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .dest-carousel-card {
+      position: absolute;
+      width: 275px;
+      height: 405px;
+      border-radius: 28px;
+      background: #FFFFFF;
+      overflow: hidden;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 10px 30px -5px rgba(0, 43, 89, 0.12);
+      transition: transform 0.5s var(--ease-apple), opacity 0.5s var(--ease-apple), box-shadow 0.5s var(--ease-apple);
+      will-change: transform, opacity;
+      cursor: pointer;
+    }
+    .dest-carousel-card.is-active {
+      box-shadow: 
+        0 20px 45px -8px rgba(0, 71, 143, 0.25),
+        0 0 0 2px rgba(0, 168, 255, 0.4);
+    }
+    .dest-img-wrap {
+      overflow: hidden;
+      border-top-left-radius: 28px;
+      border-top-right-radius: 28px;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      isolation: isolate;
+      height: 200px;
+    }
+    .dest-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-apple);
+    }
+    .dest-carousel-card:hover .dest-img-wrap img {
+      transform: scale(1.08);
     }
 
     /* Range slider custom styling */
@@ -579,7 +443,7 @@
       transform: scale(1.2);
     }
 
-    /* Apple Magnetic & Tactile Button Elastic Physics */
+    /* Elastic Tactile Physics */
     button, a.btn-tactile, .btn-store-titanium {
       transition: transform 0.32s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                   box-shadow 0.25s ease,
@@ -589,25 +453,71 @@
     button:active, a.btn-tactile:active, .btn-store-titanium:active {
       transform: scale(0.96) !important;
     }
+
+    /* AI Persona Card Active States */
+    .ai-persona-card {
+      transition: all 0.35s var(--ease-apple);
+      cursor: pointer;
+    }
+    .ai-persona-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 110, 220, 0.15);
+      border-color: rgba(0, 168, 255, 0.5);
+    }
+    .ai-persona-card.is-active {
+      border-color: #007CE8;
+      background: linear-gradient(145deg, #FFFFFF 0%, #F0F7FF 100%);
+      box-shadow: 0 0 0 2px #007CE8, 0 12px 30px -6px rgba(0, 124, 232, 0.22);
+    }
+
+    /* Network Failover Toggle Switch */
+    .failover-carrier-btn {
+      transition: all 0.28s ease;
+    }
+    .failover-carrier-btn.is-active {
+      background: #00478F;
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 71, 143, 0.3);
+    }
+
+    /* Confetti Particle Overlay */
+    #confettiCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Mobile Quick-Bar Slide Up */
+    .mobile-quick-bar {
+      transform: translateY(120%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mobile-quick-bar.is-visible {
+      transform: translateY(0);
+    }
   </style>
 </head>
 
 <body class="selection:bg-tabi-sky selection:text-white relative overflow-x-hidden antialiased">
 
+  <!-- Ambient Travel Mesh Background -->
+  <div class="bg-mesh-canvas"></div>
+
   <!-- ==================================================== -->
-  <!-- 1. HEADER / NAVIGATION BAR (OFFICIAL LOGO ASSET)     -->
+  <!-- 1. HEADER / NAVBAR (STICKY BACKDROP & OFFICIAL LOGO)  -->
   <!-- ==================================================== -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/92 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between">
       
-      <!-- Brand Logo (SVG App Icon + Typography từ tabi-go-landing) -->
+      <!-- Brand Logo (SVG 3D Globe + Typography TabiGo từ tabi-go-landing) -->
       <a href="#" class="flex items-center gap-3 group" title="TabiGo - eSIM Du Lịch Quốc Tế">
         <!-- SVG App Icon: 3D Blue Globe + Orbit + Orange Plane + Wifi Arcs -->
-        <div
-          class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-b from-[#00C2FF] via-[#0094F7] to-[#0074E0] p-[2.5px] shadow-md shadow-tabi-sky/30 group-hover:scale-105 transition-transform duration-300 relative overflow-hidden flex items-center justify-center shrink-0"
-        >
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-b from-[#00C2FF] via-[#0094F7] to-[#0074E0] p-[2.5px] shadow-md shadow-tabi-sky/30 group-hover:scale-105 transition-transform duration-300 relative overflow-hidden flex items-center justify-center shrink-0">
           <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
-            <!-- 3D Globe Circle -->
             <circle cx="50" cy="50" r="32" fill="url(#navGlobeGrad)" />
             <defs>
               <radialGradient id="navGlobeGrad" cx="38%" cy="35%" r="65%">
@@ -615,98 +525,38 @@
                 <stop offset="45%" stop-color="#38BDF8" />
                 <stop offset="100%" stop-color="#0284C7" />
               </radialGradient>
-              <linearGradient
-                id="navPlaneGrad"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
+              <linearGradient id="navPlaneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#FFAE00" />
                 <stop offset="100%" stop-color="#FF6B00" />
               </linearGradient>
             </defs>
-            <!-- Continents White Silhouette -->
-            <path
-              d="M42 32c3-2 8-1 10 2 2 3 0 7-3 8-4 1-5 4-4 7s4 5 7 4 5-3 8-1c3 2 4 6 2 8-2 2-7 1-9-1-3-2-6-1-8 2-2 3-5 5-8 4-4-2-6-7-4-11 1-3 0-6-2-8-2-2-1-6 2-7 3-1 7-2 9-3z"
-              fill="#FFFFFF"
-              fill-opacity="0.85"
-            />
-            <path
-              d="M55 58c3 1 6 4 5 7s-4 4-6 3-3-3-2-5c0-2 1-4 3-5z"
-              fill="#FFFFFF"
-              fill-opacity="0.85"
-            />
-
-            <!-- White Orbit Line looping around earth -->
-            <ellipse
-              cx="50"
-              cy="50"
-              rx="42"
-              ry="17"
-              stroke="#FFFFFF"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-dasharray="1 1"
-              stroke-opacity="0.75"
-              transform="rotate(-28 50 50)"
-            />
-            <ellipse
-              cx="50"
-              cy="50"
-              rx="42"
-              ry="17"
-              stroke="#FFFFFF"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-dasharray="5 3"
-              transform="rotate(-28 50 50)"
-            />
-
-            <!-- Orange Paper Airplane on top right of orbit -->
+            <!-- Continents -->
+            <path d="M42 32c3-2 8-1 10 2 2 3 0 7-3 8-4 1-5 4-4 7s4 5 7 4 5-3 8-1c3 2 4 6 2 8-2 2-7 1-9-1-3-2-6-1-8 2-2 3-5 5-8 4-4-2-6-7-4-11 1-3 0-6-2-8-2-2-1-6 2-7 3-1 7-2 9-3z" fill="#FFFFFF" fill-opacity="0.85" />
+            <path d="M55 58c3 1 6 4 5 7s-4 4-6 3-3-3-2-5c0-2 1-4 3-5z" fill="#FFFFFF" fill-opacity="0.85" />
+            <!-- Orbit Lines -->
+            <ellipse cx="50" cy="50" rx="42" ry="17" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 1" stroke-opacity="0.75" transform="rotate(-28 50 50)" />
+            <ellipse cx="50" cy="50" rx="42" ry="17" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 3" transform="rotate(-28 50 50)" />
+            <!-- Orange Plane -->
             <g transform="translate(62, 17) rotate(22)">
               <polygon points="12,0 0,16 6,10 12,0" fill="url(#navPlaneGrad)" />
               <polygon points="12,0 6,10 16,8 12,0" fill="#FFAA00" />
               <polygon points="6,10 7,16 9,12 6,10" fill="#E65100" />
             </g>
-
-            <!-- Wifi Wave Arcs on bottom right of earth -->
-            <path
-              d="M63 68 A 14 14 0 0 1 74 79"
-              stroke="#FFFFFF"
-              stroke-width="2.8"
-              stroke-linecap="round"
-            />
-            <path
-              d="M68 64 A 20 20 0 0 1 81 77"
-              stroke="#FFFFFF"
-              stroke-width="2.8"
-              stroke-linecap="round"
-            />
-            <path
-              d="M73 60 A 26 26 0 0 1 88 75"
-              stroke="#FFFFFF"
-              stroke-width="2.8"
-              stroke-linecap="round"
-            />
+            <!-- Wifi Wave Arcs -->
+            <path d="M63 68 A 14 14 0 0 1 74 79" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" />
+            <path d="M68 64 A 20 20 0 0 1 81 77" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" />
+            <path d="M73 60 A 26 26 0 0 1 88 75" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" />
           </svg>
         </div>
 
-        <!-- Typography Logo: "Tabi" (Navy #00478F) + "Go" (Sky Blue #00A8FF) + Orange Airplane Accent -->
+        <!-- Typography Logo: "Tabi" + "Go" + Flying Plane Accent -->
         <div class="flex flex-col">
           <div class="flex items-center leading-none">
             <span class="text-2xl font-black tracking-tight text-tabi-navy">Tabi</span>
             <span class="text-2xl font-black tracking-tight text-tabi-sky relative flex items-center">
               Go
-              <!-- Cute Mini Orange Paper Plane on top-right of 'Go' -->
-              <svg
-                class="w-3.5 h-3.5 ml-0.5 text-tabi-orange transform -rotate-12 animate-plane-fly"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="m21.426 2.574-19 9a1 1 0 0 0 .044 1.832l6.877 2.457 2.457 6.877a1 1 0 0 0 1.832.044l9-19a1 1 0 0 0-1.21-1.21z"
-                />
+              <svg class="w-3.5 h-3.5 ml-0.5 text-tabi-orange transform -rotate-12 animate-plane-fly" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m21.426 2.574-19 9a1 1 0 0 0 .044 1.832l6.877 2.457 2.457 6.877a1 1 0 0 0 1.832.044l9-19a1 1 0 0 0-1.21-1.21z" />
               </svg>
             </span>
           </div>
@@ -721,29 +571,61 @@
         </a>
         <a href="#destinations" class="hover:text-tabi-blue transition-colors">Điểm Đến Hot</a>
         <a href="#features" class="hover:text-tabi-blue transition-colors">Tính Năng App</a>
+        <a href="#perks" class="hover:text-tabi-blue transition-colors">Đặc Quyền 3M</a>
         <a href="#how-it-works" class="hover:text-tabi-blue transition-colors">Cách Cài Đặt</a>
         <a href="#reviews" class="hover:text-tabi-blue transition-colors">Đánh Giá</a>
         <a href="#faq" class="hover:text-tabi-blue transition-colors">Hỏi Đáp</a>
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="flex items-center gap-3">
-        <a href="#calculator" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-tabi-navy bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-200 btn-tactile">
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Audio Haptics / Sound Toggle -->
+        <button type="button" id="soundToggleBtn" class="btn-tactile p-2 sm:px-2.5 sm:py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors flex items-center gap-1.5 text-xs font-bold" title="Bật/Tắt âm thanh tương tác" aria-label="Bật/Tắt âm thanh tương tác">
+          <span id="soundIcon">🔊</span>
+          <span class="hidden md:inline text-[11px] text-slate-600 font-extrabold" id="soundLabel">Âm Thanh</span>
+        </button>
+
+        <a href="#calculator" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-tabi-navy bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-200 btn-tactile">
           Tra Cứu Giá Gốc
         </a>
         <a href="#download" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs font-black text-white bg-gradient-to-r from-tabi-orange to-tabi-amber hover:from-tabi-coral hover:to-tabi-orange transition-all shadow-md shadow-tabi-orange/30 hover:scale-105 active:scale-95 btn-tactile">
           <span>Tải App Nhận 10%</span>
           <span>🚀</span>
         </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" aria-label="Mở menu điều hướng">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
       </div>
 
+    </div>
+
+    <!-- Mobile Slide Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden px-4 pt-2 pb-6 bg-white/98 border-t border-slate-200 shadow-xl space-y-3">
+      <nav class="flex flex-col space-y-2 text-sm font-bold text-slate-700">
+        <a href="#calculator" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">⚡ Tính Cước eSIM</a>
+        <a href="#destinations" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Điểm Đến Hot</a>
+        <a href="#features" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Tính Năng App</a>
+        <a href="#perks" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Đặc Quyền 3M</a>
+        <a href="#how-it-works" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Cách Cài Đặt</a>
+        <a href="#reviews" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Đánh Giá Khách Hàng</a>
+        <a href="#faq" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-tabi-blue">Câu Hỏi Thường Gặp</a>
+      </nav>
+      <div class="pt-2">
+        <a href="#download" class="mobile-nav-link block text-center py-3 rounded-xl bg-gradient-to-r from-tabi-orange to-tabi-amber text-white font-black text-sm shadow-md">
+          Tải TabiGo Ngay — Nhận Mã TABIGO10 🚀
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
 
     <!-- ==================================================== -->
-    <!-- 2. HERO SECTION (UNCLIPPED IPHONE 16 PRO 3D PARALLAX) -->
+    <!-- 2. HERO SECTION (SPLIT-SCREEN 2 CỘT & 3D PARALLAX)   -->
     <!-- ==================================================== -->
     <section id="heroSection" class="relative pt-20 pb-12 sm:pt-24 sm:pb-16 overflow-hidden z-10 bg-gradient-to-b from-[#F0F7FD] via-[#F8FAFD] to-white">
       
@@ -905,7 +787,7 @@
               <!-- Glow Behind Mockup -->
               <div class="absolute -inset-2 bg-gradient-to-tr from-tabi-sky/30 via-tabi-blue/20 to-tabi-orange/15 rounded-[56px] blur-2xl -z-10 opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <!-- Authentic iPhone Frame: Clean drop-shadow without destructive overflow-hidden or glare artifact -->
+              <!-- Authentic iPhone Frame -->
               <div class="relative drop-shadow-[0_25px_50px_rgba(0,43,89,0.28)] transition-transform duration-500 hover:scale-[1.015]">
                 <img 
                   src="./assets/images/tabigo_phone_transparent.png" 
@@ -965,28 +847,142 @@
     </section>
 
     <!-- ==================================================== -->
+    <!-- 3.1. LIVE TRAVEL ROAMING MARQUEE TICKER (FROM TAPATO)-->
+    <!-- ==================================================== -->
+    <div class="relative z-20 overflow-hidden bg-gradient-to-r from-[#002B59] via-[#00478F] to-[#002B59] text-white py-2.5 border-b border-blue-400/20 shadow-inner">
+      <div class="marquee-track flex items-center whitespace-nowrap gap-8 text-xs font-bold tracking-wide">
+        <!-- Content Part 1 -->
+        <div class="flex items-center gap-8 shrink-0">
+          <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> ✈️ Du khách Lan P. vừa kích hoạt eSIM 5G SoftBank tại Tokyo (1 phút trước)</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">⚡ Cài đặt 1-Tap 60s không tháo SIM gốc</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🌐 Phủ sóng 150+ quốc gia &amp; vùng lãnh thổ</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">📱 Hỗ trợ iPhone 11-16 Pro, Samsung S20-S24 &amp; Android</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🛡️ Cam kết hoàn tiền 100% nếu sự cố kết nối</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">💬 Livechat hỗ trợ tiếng Việt 24/7 trực tiếp trong App</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🇰🇷 Du khách Minh T. vừa kết nối SK Telecom tại Seoul (3 phút trước)</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5 text-amber-300">🎁 Nhập mã TABIGO10 giảm 10% đơn hàng đầu tiên</span>
+          <span class="text-sky-300/60">•</span>
+        </div>
+        <!-- Content Part 2 (Duplicate for Seamless Infinite Loop) -->
+        <div class="flex items-center gap-8 shrink-0" aria-hidden="true">
+          <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> ✈️ Du khách Lan P. vừa kích hoạt eSIM 5G SoftBank tại Tokyo (1 phút trước)</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">⚡ Cài đặt 1-Tap 60s không tháo SIM gốc</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🌐 Phủ sóng 150+ quốc gia &amp; vùng lãnh thổ</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">📱 Hỗ trợ iPhone 11-16 Pro, Samsung S20-S24 &amp; Android</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🛡️ Cam kết hoàn tiền 100% nếu sự cố kết nối</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">💬 Livechat hỗ trợ tiếng Việt 24/7 trực tiếp trong App</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5">🇰🇷 Du khách Minh T. vừa kết nối SK Telecom tại Seoul (3 phút trước)</span>
+          <span class="text-sky-300/60">•</span>
+          <span class="inline-flex items-center gap-1.5 text-amber-300">🎁 Nhập mã TABIGO10 giảm 10% đơn hàng đầu tiên</span>
+          <span class="text-sky-300/60">•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================================== -->
+    <!-- 3.2. DUAL-CARRIER 5G SMART FAILOVER SIMULATOR        -->
+    <!-- ==================================================== -->
+    <section class="py-6 sm:py-8 bg-gradient-to-r from-blue-50/80 via-white to-sky-50/80 border-b border-blue-200/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="impeccable-card rounded-3xl p-5 sm:p-7 border border-blue-200/90 bg-white/95 shadow-md flex flex-col lg:flex-row items-center justify-between gap-6">
+          
+          <div class="text-left max-w-xl">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-tabi-navy text-[11px] font-black uppercase tracking-wider mb-2.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Độc Quyền 3M Telecom: Tự Động Đổi Mạng Kép</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 leading-snug">
+              Không Bao Giờ Mất Sóng Với <span class="text-gradient-sky">2 Nhà Mạng Tier-1 Song Song</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed font-medium">
+              Khi bạn vào ga tàu điện ngầm, tầng hầm hay khu du lịch vùng cao, TabiGo tự động phát hiện cường độ tín hiệu và chuyển sang nhà mạng đối tác mạnh hơn trong <strong>chưa đầy 1 giây</strong>. Bấm thử nghiệm ngay bên cạnh!
+            </p>
+          </div>
+
+          <!-- Interactive Failover Telemetry Rig -->
+          <div class="w-full lg:w-auto bg-slate-900 text-white p-5 rounded-2xl shadow-xl border border-slate-700/80 shrink-0 min-w-[320px] sm:min-w-[360px]">
+            <div class="flex items-center justify-between gap-3 pb-3 border-b border-slate-800">
+              <div class="flex items-center gap-2">
+                <span class="text-base">🇯🇵</span>
+                <span class="text-xs font-bold text-slate-300">Tokyo, Shinjuku Station</span>
+              </div>
+              <div class="flex items-center gap-1.5 text-[11px] font-black text-emerald-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span id="failover-carrier-status">5G Siêu Tốc</span>
+              </div>
+            </div>
+
+            <!-- Carrier Switch Buttons -->
+            <div class="grid grid-cols-2 gap-2 mt-3 p-1 bg-slate-800 rounded-xl">
+              <button type="button" id="carrierBtn1" class="failover-carrier-btn is-active py-2 px-3 rounded-lg text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+                <span>📶 SoftBank 5G</span>
+              </button>
+              <button type="button" id="carrierBtn2" class="failover-carrier-btn py-2 px-3 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+                <span>📡 NTT Docomo</span>
+              </button>
+            </div>
+
+            <!-- Dynamic Telemetry Readout -->
+            <div class="grid grid-cols-3 gap-2 mt-3.5 pt-3 border-t border-slate-800 text-center">
+              <div>
+                <div class="text-[9px] uppercase font-bold text-slate-400">Cường Độ Sóng</div>
+                <div class="text-xs font-black text-emerald-400 mt-0.5" id="failover-signal">5/5 Vạch 5G</div>
+              </div>
+              <div>
+                <div class="text-[9px] uppercase font-bold text-slate-400">Độ Trễ Ping</div>
+                <div class="text-xs font-black text-amber-400 mt-0.5" id="failover-ping">18 ms</div>
+              </div>
+              <div>
+                <div class="text-[9px] uppercase font-bold text-slate-400">Tốc Độ Tải</div>
+                <div class="text-xs font-black text-sky-400 mt-0.5" id="failover-speed">218 Mbps</div>
+              </div>
+            </div>
+
+            <div class="mt-3 text-[10px] text-center text-slate-400 font-medium">
+              💡 Bấm chọn nhà mạng để kích hoạt thuật toán Smart Failover
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================== -->
     <!-- 3.5. 4-UP ANIMATED STAT COUNTER BAR (IMPECCABLE CARDS) -->
     <!-- ==================================================== -->
     <section id="statBarSection" class="py-12 bg-gradient-to-b from-white via-slate-50 to-white border-b border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
           
-          <div class="apple-reveal delay-75 impeccable-card p-5 rounded-2xl">
+          <div class="apple-reveal delay-100 impeccable-card p-5 rounded-2xl">
             <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-tabi-navy tracking-tight stat-counter" data-target="150" data-suffix="+">0+</div>
             <div class="text-xs text-slate-500 font-extrabold uppercase tracking-wider mt-1.5">Quốc Gia Phủ Sóng</div>
           </div>
 
-          <div class="apple-reveal delay-150 impeccable-card p-5 rounded-2xl">
+          <div class="apple-reveal delay-100 impeccable-card p-5 rounded-2xl">
             <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-tabi-blue tracking-tight stat-counter" data-target="500000" data-suffix="+">0+</div>
             <div class="text-xs text-slate-500 font-extrabold uppercase tracking-wider mt-1.5">Lượt Kích Hoạt eSIM</div>
           </div>
 
-          <div class="apple-reveal delay-225 impeccable-card p-5 rounded-2xl">
+          <div class="apple-reveal delay-200 impeccable-card p-5 rounded-2xl">
             <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-tabi-sky tracking-tight stat-counter" data-target="99.8" data-decimal="1" data-suffix="%">0%</div>
             <div class="text-xs text-slate-500 font-extrabold uppercase tracking-wider mt-1.5">Sóng 5G Ổn Định</div>
           </div>
 
-          <div class="apple-reveal delay-300 impeccable-card p-5 rounded-2xl">
+          <div class="apple-reveal delay-200 impeccable-card p-5 rounded-2xl">
             <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-tabi-amber tracking-tight stat-counter" data-target="4.9" data-decimal="1" data-suffix=" ★">0 ★</div>
             <div class="text-xs text-slate-500 font-extrabold uppercase tracking-wider mt-1.5">Đánh Giá Store (12k+)</div>
           </div>
@@ -1007,18 +1003,18 @@
             <span class="text-rose-600">Nỗi Đau SIM Vật Lý Cũ</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2 tracking-tight">
-            Chuyến Đi Du Lịch Từng Khiến Bạn <span class="shimmer-text-orange">Ức Chế?</span>
+            Chuyến Đi Du Lịch Từng Khiến Bạn <span class="text-gradient-orange">Ức Chế?</span>
           </h2>
           <p class="text-slate-600 mt-2.5 text-xs sm:text-sm font-medium">
             Những rắc rối kinh điển với SIM vật lý tại sân bay nước ngoài khiến bạn lãng phí hàng giờ quý báu ngay khi vừa hạ cánh.
           </p>
         </div>
 
-        <!-- 4 Pain Points Grid (Impeccable Cards) -->
+        <!-- 4 Pain Points Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           
           <!-- Pain 1 -->
-          <div class="apple-reveal delay-75 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center text-2xl mb-3.5 shadow-xs">
                 ⏳
@@ -1035,7 +1031,7 @@
           </div>
 
           <!-- Pain 2 -->
-          <div class="apple-reveal delay-150 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center text-2xl mb-3.5 shadow-xs">
                 📍
@@ -1052,7 +1048,7 @@
           </div>
 
           <!-- Pain 3 -->
-          <div class="apple-reveal delay-225 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-200 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center text-2xl mb-3.5 shadow-xs">
                 💸
@@ -1069,7 +1065,7 @@
           </div>
 
           <!-- Pain 4 -->
-          <div class="apple-reveal delay-300 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-200 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center text-2xl mb-3.5 shadow-xs">
                 ❌
@@ -1109,8 +1105,98 @@
           </p>
         </div>
 
-        <div class="apple-reveal delay-100 impeccable-card apple-spotlight-card max-w-4xl mx-auto rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+        <div class="apple-reveal delay-100 impeccable-card max-w-4xl mx-auto rounded-3xl p-6 sm:p-10 relative overflow-hidden">
           
+          <!-- Calculator Mode Switcher: Custom Slider vs AI Smart Match (Chợ 3M) -->
+          <div class="flex items-center justify-center p-1.5 bg-slate-100/90 rounded-2xl max-w-md mx-auto mb-6 border border-slate-200 shadow-inner">
+            <button type="button" id="calc-tab-slider" class="btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-black transition-all bg-white text-tabi-navy shadow-xs flex items-center justify-center gap-1.5 cursor-pointer">
+              <span>🎛️</span> Tự Chọn Số Ngày &amp; Data
+            </button>
+            <button type="button" id="calc-tab-ai" class="btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-bold transition-all text-slate-500 hover:text-tabi-navy flex items-center justify-center gap-1.5 cursor-pointer">
+              <span>🤖</span> Trợ Lý AI Gợi Ý
+              <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-black">Chợ 3M</span>
+            </button>
+          </div>
+
+          <!-- AI Mode Container (Chợ 3M Recommended Engine) -->
+          <div id="calc-ai-container" class="hidden mb-6 pt-1">
+            <div class="text-left mb-3.5">
+              <span class="text-xs font-extrabold text-tabi-navy uppercase tracking-wider block">
+                Mục Đích Chuyến Đi Của Bạn (AI Pick Theo Nghiệp Vụ 3M):
+              </span>
+              <p class="text-[11px] text-slate-500 font-medium">Hệ thống phân tích nhu cầu băng thông &amp; tự động chọn gói tối ưu chi phí nhất</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="ai-persona-grid">
+              
+              <!-- Persona 1 -->
+              <div class="ai-persona-card is-active p-3.5 sm:p-4 rounded-2xl border-2 border-tabi-blue bg-white" data-persona="vacation" data-country="japan" data-tier="1.3" data-days="7" data-name="Du Lịch & Sống Ảo (TikTok, Maps, Zalo)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">🌴</span>
+                    <span class="text-xs font-black text-slate-900">Du Lịch &amp; Sống Ảo</span>
+                  </div>
+                  <span class="text-[9px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">98% Du Khách Chọn</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-1.5 font-medium leading-relaxed">
+                  Lướt mạng xã hội, tra cứu tàu điện ngầm, gọi Zalo. Gợi ý: <strong>2GB/Ngày 5G Daily Reset</strong>.
+                </p>
+              </div>
+
+              <!-- Persona 2 -->
+              <div class="ai-persona-card p-3.5 sm:p-4 rounded-2xl border border-slate-200 bg-white" data-persona="business" data-country="japan" data-tier="1.7" data-days="5" data-name="Công Tác & Chuyên Gia (Cần VAT)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">💼</span>
+                    <span class="text-xs font-black text-slate-900">Công Tác &amp; Chuyên Gia</span>
+                  </div>
+                  <span class="text-[9px] font-extrabold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">Xuất Hóa Đơn VAT</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-1.5 font-medium leading-relaxed">
+                  Họp Zoom, gửi mail, tặng kèm <strong>VPN Du Lịch Miễn Phí</strong> &amp; xuất Hóa đơn GTGT trong 5 phút.
+                </p>
+              </div>
+
+              <!-- Persona 3 -->
+              <div class="ai-persona-card p-3.5 sm:p-4 rounded-2xl border border-slate-200 bg-white" data-persona="regional" data-country="europe" data-tier="1.3" data-days="15" data-name="Tour Đa Quốc Gia (Châu Âu / ASEAN)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">🗺️</span>
+                    <span class="text-xs font-black text-slate-900">Tour Đa Quốc Gia</span>
+                  </div>
+                  <span class="text-[9px] font-extrabold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">1 eSIM Xuyên Biên Giới</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-1.5 font-medium leading-relaxed">
+                  Đi liên tuyến Châu Âu (33 nước) hoặc Đông Nam Á (8 nước). Tự động roaming không cần đổi cấu hình.
+                </p>
+              </div>
+
+              <!-- Persona 4 -->
+              <div class="ai-persona-card p-3.5 sm:p-4 rounded-2xl border border-slate-200 bg-white" data-persona="hotspot" data-country="japan" data-tier="1.7" data-days="10" data-name="Đi Cùng Nhóm & Phát Hotspot">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">👨‍👩‍👧‍👦</span>
+                    <span class="text-xs font-black text-slate-900">Đi Nhóm &amp; Phát Hotspot</span>
+                  </div>
+                  <span class="text-[9px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Tiết Kiệm 70%</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-1.5 font-medium leading-relaxed">
+                  Chia sẻ Wi-Fi cho cả gia đình hoặc nhóm bạn 3-5 thiết bị cùng dùng mà không lo nghẽn mạng.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- AI Recommended Badge Banner -->
+            <div class="mt-3.5 p-3 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-amber-50 border border-blue-200/80 flex items-center justify-between text-xs font-bold text-tabi-navy">
+              <div class="flex items-center gap-2">
+                <span class="text-base">⚡</span>
+                <span>Thuật Toán Chợ 3M: <span id="ai-recommendation-title" class="text-tabi-blue font-black">Gói Du Lịch 5G Phổ Thông (2GB/Ngày)</span></span>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500 text-white font-extrabold">Độ Khớp 99.4%</span>
+            </div>
+          </div>
+
           <!-- Top Tag with Discount Code -->
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-6 border-b border-slate-100">
             <div class="flex items-center gap-2">
@@ -1219,7 +1305,6 @@
 
           <!-- Dynamic Result Box (Midnight Sapphire Fintech Card) -->
           <div class="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#002244] via-[#003B75] to-[#005AB5] text-white border border-white/15 shadow-2xl shadow-blue-950/30 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <!-- Ambient cyan light glow in corner -->
             <div class="absolute -right-12 -bottom-12 w-52 h-52 bg-cyan-400/20 rounded-full blur-2xl pointer-events-none"></div>
 
             <div class="relative z-10">
@@ -1237,6 +1322,13 @@
                 <span id="calc-points-display" class="underline text-amber-300 font-black">+23 Điểm Tabi</span>
                 <span>tích lũy đổi quà chuyến sau!</span>
               </p>
+              <div class="flex flex-wrap items-center gap-2 mt-2 pt-2 border-t border-white/10 text-[11px] text-sky-200">
+                <span class="inline-flex items-center gap-1 font-bold">✓ Tặng Free VPN Du Lịch</span>
+                <span>•</span>
+                <span class="inline-flex items-center gap-1 font-bold">✓ Hỗ Trợ Xuất Hóa Đơn VAT</span>
+                <span>•</span>
+                <span class="inline-flex items-center gap-1 font-bold text-amber-300">✓ Hoàn Tiền 100% Nếu Lỗi Mạng</span>
+              </div>
             </div>
 
             <div class="relative z-10 flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
@@ -1287,230 +1379,240 @@
             />
             <button type="button" id="search-clear-btn" class="hidden absolute right-3 w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 items-center justify-center text-xs" aria-label="Xóa tìm kiếm">✕</button>
           </div>
-          <div id="search-feedback" class="text-xs text-slate-500 mt-2 text-center hidden"></div>
+          <div id="search-feedback" class="hidden text-center text-xs font-bold text-tabi-blue mt-2"></div>
         </div>
 
-        <!-- 3D Circular Coverflow Stage (Center First, Auto-Looping) -->
-        <div class="apple-reveal delay-100 dest-carousel-stage" id="dest-stage" tabindex="0" role="region" aria-label="Danh sách điểm đến du lịch">
+        <!-- Carousel 3D Coverflow Container -->
+        <div class="relative apple-reveal delay-200">
           
-          <!-- Card 0: Nhật Bản (Iconic Bright Daylight Mount Fuji + Sakura) -->
-          <div class="dest-carousel-card impeccable-card is-active" data-dest-index="0" data-country="Nhật Bản" data-city="Tokyo, Kyoto" data-price="25.000" data-provider="SoftBank & Docomo 5G" data-badge="Bán Chạy Nhất">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=650&q=85" alt="Nhật Bản núi Phú Sĩ ban ngày" class="dest-img" loading="eager" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇯🇵</span> Nhật Bản
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Bán Chạy #1</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Tokyo &amp; Osaka 5G</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Mạng SoftBank &amp; Docomo phủ sóng 99.9%</p>
+          <div class="dest-carousel-stage" id="dest-stage" tabindex="0" role="region" aria-label="Bộ sưu tập điểm đến quốc tế">
+            
+            <!-- Card 0: Nhật Bản (Bán chạy #1) -->
+            <div class="dest-carousel-card" data-country="Nhật Bản" data-city="Tokyo, Kyoto, Osaka" data-price="99.000" data-network="SoftBank 5G">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Nhật Bản Núi Phú Sĩ" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-tabi-orange text-white text-[10px] font-black shadow-md flex items-center gap-1">
+                  <span>🔥</span> Bán Chạy #1
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇯🇵 Nhật Bản
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">25.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Sóng 5G SoftBank
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Gói Không Giới Hạn</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Data tốc độ cao, giữ SIM gốc nhận OTP ngân hàng.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">99.000 đ<span class="text-[10px] font-normal text-slate-400">/ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card 1: Hàn Quốc (Seoul Daylight Sunshine) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="1" data-country="Hàn Quốc" data-city="Seoul, Busan" data-price="22.000" data-provider="SK Telecom & KT 5G" data-badge="Ưu Đãi Lớn">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=650&q=85" alt="Hàn Quốc cung điện Seoul ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇰🇷</span> Hàn Quốc
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">5G Siêu Tốc</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Seoul &amp; Đảo Jeju</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Nhà mạng SK Telecom &amp; KT tốc độ 1Gbps</p>
+            <!-- Card 1: Hàn Quốc -->
+            <div class="dest-carousel-card" data-country="Hàn Quốc" data-city="Seoul, Busan, Jeju" data-price="79.000" data-network="SK Telecom">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=600&q=80" alt="Hàn Quốc Seoul" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-500 text-white text-[10px] font-black shadow-md">
+                  Tức Thì 1-Tap
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇰🇷 Hàn Quốc
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">22.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Sóng SK Telecom
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Data 5G Siêu Tốc</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Livestream mượt mà tại Seoul, đảo Nami, Busan.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">79.000 đ<span class="text-[10px] font-normal text-slate-400">/ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card 2: Thái Lan (Bangkok Grand Palace Sunshine) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="2" data-country="Thái Lan" data-city="Bangkok, Phuket" data-price="18.000" data-provider="AIS & TrueMove 5G" data-badge="Giá Rẻ Nhất">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=650&q=85" alt="Thái Lan chùa vàng Bangkok ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇹🇭</span> Thái Lan
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Giá Siêu Rẻ</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Bangkok &amp; Chiang Mai</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Mạng AIS &amp; TrueMove sóng căng tràn mọi đảo</p>
+            <!-- Card 2: Châu Âu 33 Nước -->
+            <div class="dest-carousel-card" data-country="Châu Âu" data-city="Paris, Rome, Berlin" data-price="250.000" data-network="Vodafone 5G">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Châu Âu Paris" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600 text-white text-[10px] font-black shadow-md">
+                  33 Quốc Gia
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇪🇺 Châu Âu 33 Nước
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">18.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Mạng Vodafone &amp; Orange
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Gói 10GB / 5 Ngày</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Qua biên giới không cần đổi SIM, sóng phủ toàn EU.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">250.000 đ<span class="text-[10px] font-normal text-slate-400">/5 ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card 3: Châu Âu (Paris Eiffel Sunshine) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="3" data-country="Châu Âu" data-city="Pháp, Ý, Đức (33 Nước)" data-price="32.000" data-provider="Vodafone & Orange EU" data-badge="33 Quốc Gia">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=650&q=85" alt="Châu Âu tháp Eiffel ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇪🇺</span> Châu Âu (EU)
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">33 Nước</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Paris, Rome, Berlin</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Qua biên giới tự động chuyển mạng, không lo đổi SIM</p>
+            <!-- Card 3: Thái Lan -->
+            <div class="dest-carousel-card" data-country="Thái Lan" data-city="Bangkok, Phuket, Chiang Mai" data-price="49.000" data-network="AIS 5G">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80" alt="Thái Lan Bangkok" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-amber-500 text-white text-[10px] font-black shadow-md">
+                  Giá Rẻ Nhất
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇹🇭 Thái Lan
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">32.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Sóng 5G AIS
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Unlimited + Gọi Nội Địa</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Tặng 15 phút gọi điện đặt xe Grab, khách sạn Thái Lan.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">49.000 đ<span class="text-[10px] font-normal text-slate-400">/ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card 4: Singapore (Marina Bay Sands Sunshine) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="4" data-country="Singapore" data-city="Singapore" data-price="20.000" data-provider="Singtel 5G" data-badge="Siêu Tốc Độ">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=650&q=85" alt="Singapore Marina Bay ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇸🇬</span> Singapore
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">5G Singtel</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Marina Bay &amp; Sentosa</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Tốc độ mạng dẫn đầu Đông Nam Á</p>
+            <!-- Card 4: Mỹ & Canada -->
+            <div class="dest-carousel-card" data-country="Mỹ & Canada" data-city="New York, Los Angeles, Toronto" data-price="199.000" data-network="T-Mobile 5G">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=600&q=80" alt="Mỹ New York" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-purple-600 text-white text-[10px] font-black shadow-md">
+                  Bắc Mỹ
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇺🇸 Mỹ &amp; Canada
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">20.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Sóng T-Mobile &amp; AT&amp;T
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Gói 5G Unlimited</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Dung lượng không giới hạn tốc độ cao khắp các bang.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">199.000 đ<span class="text-[10px] font-normal text-slate-400">/3 ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card 5: Đài Loan (Taipei 101 Daylight) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="5" data-country="Đài Loan" data-city="Taipei, Kaohsiung" data-price="20.000" data-provider="Chunghwa Telecom 5G" data-badge="Ẩm Thực">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1508247967583-7d982ea01526?auto=format&fit=crop&w=650&q=85" alt="Đài Loan tháp Taipei 101 ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇹🇼</span> Đài Loan
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Chunghwa</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">Taipei 101 &amp; Cảnh Đẹp</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Sóng khỏe từ đồng bằng lên đến đỉnh Alishan</p>
+            <!-- Card 5: Singapore & Malaysia -->
+            <div class="dest-carousel-card" data-country="Singapore" data-city="Singapore, Kuala Lumpur" data-price="69.000" data-network="Singtel 5G">
+              <div class="dest-img-wrap relative">
+                <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=600&q=80" alt="Singapore Marina Bay" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-sky-600 text-white text-[10px] font-black shadow-md">
+                  Gói Kép
+                </span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-bold">
+                  🇸🇬 Sing &amp; Mã Lai
+                </span>
               </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+              <div class="p-4 flex flex-col justify-between h-[205px]">
                 <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">20.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
+                  <div class="text-[11px] text-tabi-blue font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Sóng Singtel 5G
+                  </div>
+                  <h3 class="text-base font-black text-slate-800 mt-1">Dùng Chung 2 Nước</h3>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">Đi qua cầu Johor Bahru mạng tự động chuyển êm ái.</p>
                 </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block font-semibold">Chỉ từ</span>
+                    <span class="text-base font-black text-tabi-navy">69.000 đ<span class="text-[10px] font-normal text-slate-400">/ngày</span></span>
+                  </div>
+                  <a href="#download" class="btn-tactile px-3 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold shadow-xs">
+                    Xem Gói
+                  </a>
+                </div>
               </div>
             </div>
+
           </div>
 
-          <!-- Card 6: Mỹ (USA Sunshine) -->
-          <div class="dest-carousel-card impeccable-card" data-dest-index="6" data-country="Mỹ" data-city="New York, California" data-price="35.000" data-provider="T-Mobile & AT&T 5G" data-badge="Toàn Nước Mỹ">
-            <div class="dest-img-wrap">
-              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=650&q=85" alt="Hoa Kỳ cầu Golden Gate ban ngày" class="dest-img" loading="lazy" />
-            </div>
-            <div class="p-5 flex flex-col justify-between h-[40%] bg-white">
+          <!-- Carousel Controls -->
+          <div class="flex items-center justify-center gap-4 mt-8">
+            <button type="button" id="dest-prev-btn" class="btn-tactile w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md text-slate-700 hover:text-tabi-blue flex items-center justify-center text-lg" aria-label="Điểm đến trước">
+              ‹
+            </button>
+            <div class="flex items-center gap-1.5" id="dest-dots-container"></div>
+            <button type="button" id="dest-next-btn" class="btn-tactile w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md text-slate-700 hover:text-tabi-blue flex items-center justify-center text-lg" aria-label="Điểm đến tiếp theo">
+              ›
+            </button>
+          </div>
+
+          <!-- Live Deal Toast Banner -->
+          <div class="max-w-xl mx-auto mt-8 p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200/80 shadow-xs flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl" id="deal-flag">🇯🇵</span>
               <div>
-                <div class="flex items-center justify-between mb-1">
-                  <span class="text-xs font-bold text-tabi-blue flex items-center gap-1">
-                    <span>🇺🇸</span> Hoa Kỳ (USA)
-                  </span>
-                  <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">T-Mobile &amp; AT&amp;T</span>
-                </div>
-                <h3 class="text-lg font-black text-tabi-navy leading-tight">New York &amp; California</h3>
-                <p class="text-[11px] text-slate-500 mt-0.5">Phủ sóng toàn bộ 50 tiểu bang của Mỹ</p>
-              </div>
-              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
-                <div>
-                  <div class="text-[10px] text-slate-400 font-semibold">Chỉ từ</div>
-                  <div class="text-base font-black text-tabi-navy">35.000đ <span class="text-xs font-normal text-slate-500">/ngày</span></div>
-                </div>
-                <span class="px-3 py-1.5 rounded-xl bg-blue-50 text-tabi-blue text-xs font-bold">Xem gói</span>
+                <div class="text-xs font-black text-tabi-navy" id="deal-title">Ưu đãi eSIM Nhật Bản hôm nay</div>
+                <div class="text-[11px] text-slate-500 font-medium" id="deal-desc">Giảm ngay 10% khi nhập mã TABIGO10 lúc thanh toán trên ứng dụng</div>
               </div>
             </div>
+            <a href="#download" class="btn-tactile px-3.5 py-1.5 rounded-xl bg-tabi-orange text-white text-xs font-black shadow-xs shrink-0">
+              Nhận Voucher
+            </a>
           </div>
 
-        </div>
-
-        <!-- Controls: Prev / Next & Indicators -->
-        <div class="flex items-center justify-center gap-4 mt-6">
-          <button type="button" id="dest-prev-btn" class="btn-tactile w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-tabi-sky shadow-md flex items-center justify-center text-slate-700 hover:text-tabi-blue transition-all hover:scale-105 active:scale-95" aria-label="Xem điểm đến trước">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
-
-          <div class="flex items-center gap-2" id="dest-dots-container">
-            <!-- Dynamic dots rendered by JS -->
-          </div>
-
-          <button type="button" id="dest-next-btn" class="btn-tactile w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-tabi-sky shadow-md flex items-center justify-center text-slate-700 hover:text-tabi-blue transition-all hover:scale-105 active:scale-95" aria-label="Xem điểm đến kế tiếp">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
-        </div>
-
-        <!-- Synchronized Deals Panel -->
-        <div class="apple-reveal delay-200 max-w-2xl mx-auto mt-8 p-4 rounded-2xl impeccable-card flex items-center justify-between gap-4" id="dest-deal-banner">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-lg" id="deal-flag">🇯🇵</div>
-            <div>
-              <div class="text-xs font-bold text-tabi-navy" id="deal-title">Ưu đãi eSIM Nhật Bản hôm nay</div>
-              <div class="text-[11px] text-slate-500" id="deal-desc">Giảm thêm 10% khi nhập mã TABIGO10 lúc thanh toán</div>
-            </div>
-          </div>
-          <a href="#calculator" class="btn-tactile px-3.5 py-1.5 rounded-xl bg-tabi-blue hover:bg-tabi-navy text-white text-xs font-bold transition-colors whitespace-nowrap">
-            Tính Giá Ngay
-          </a>
         </div>
 
       </div>
     </section>
 
     <!-- ==================================================== -->
-    <!-- 7. BENTO GRID FEATURES (UNIFIED STABLE REVEAL)       -->
+    <!-- 7. BENTO GRID FEATURES (APP 3M RENEWAL SCREEN DECK)  -->
     <!-- ==================================================== -->
     <section id="features" class="py-16 sm:py-20 relative bg-gradient-to-b from-white via-slate-50 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1528,7 +1630,6 @@
           </p>
         </div>
 
-        <!-- Single unified reveal container for entire Bento stage to prevent jitter -->
         <div class="apple-reveal grid grid-cols-1 lg:grid-cols-12 gap-10 items-center" id="bento-stage-grid">
           
           <!-- Left: 4 Interactive Feature Cards (7 cols) -->
@@ -1650,7 +1751,6 @@
 
                   <!-- Screen 0: 1-Tap Active (eUICC) -->
                   <div class="bento-screen is-active" data-screen-index="0">
-                    <!-- Top App Nav -->
                     <div class="px-4 py-2.5 bg-white border-b border-slate-100 flex items-center justify-between">
                       <div class="flex items-center gap-1.5 text-xs font-bold text-tabi-navy">
                         <span class="text-base leading-none">‹</span>
@@ -1693,9 +1793,8 @@
                     </div>
                   </div>
 
-                  <!-- Screen 1: Data Gauge (Chuẩn Figma App 3M Renewal Design) -->
+                  <!-- Screen 1: Data Gauge (Figma App 3M Renewal Design) -->
                   <div class="bento-screen" data-screen-index="1">
-                    <!-- Top App Nav -->
                     <div class="px-4 py-2.5 bg-white border-b border-slate-100 flex items-center justify-between">
                       <div class="flex items-center gap-1.5 text-xs font-bold text-tabi-navy">
                         <span class="text-base leading-none">‹</span>
@@ -1708,7 +1807,6 @@
                     </div>
 
                     <div class="p-3.5 flex-1 flex flex-col justify-between">
-                      <!-- Active Destination Banner -->
                       <div class="bg-white rounded-2xl p-3 border border-slate-200/80 shadow-xs flex items-center justify-between">
                         <div class="flex items-center gap-2">
                           <span class="text-xl">🇯🇵</span>
@@ -1720,24 +1818,19 @@
                         <span class="text-[9px] font-extrabold px-1.5 py-0.5 rounded bg-blue-100 text-tabi-blue">ROAMING</span>
                       </div>
 
-                      <!-- Donut Gauge Chart (Figma Renewal Style) -->
                       <div class="bg-white rounded-2xl p-3.5 border border-slate-200/80 shadow-xs flex flex-col items-center justify-center relative">
                         <div class="relative w-36 h-36 flex items-center justify-center">
                           <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                            <!-- Gradient Definition -->
                             <defs>
                               <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" stop-color="#00A8FF" />
                                 <stop offset="100%" stop-color="#00478F" />
                               </linearGradient>
                             </defs>
-                            <!-- Background Track -->
                             <circle cx="50" cy="50" r="39" stroke="#EEF3F8" stroke-width="8.5" fill="none"/>
-                            <!-- Active Progress Arc (85% remaining) -->
                             <circle id="bento-gauge-circle" cx="50" cy="50" r="39" stroke="url(#gaugeGrad)" stroke-width="8.5" stroke-dasharray="245" stroke-dashoffset="36" stroke-linecap="round" fill="none" style="transition: stroke-dashoffset 1.4s cubic-bezier(0.16, 1, 0.3, 1); will-change: stroke-dashoffset;"/>
                           </svg>
 
-                          <!-- Center Stat Typography -->
                           <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
                             <div class="text-2xl font-black text-tabi-navy tracking-tight leading-none">
                               8.5 <span class="text-xs font-extrabold text-tabi-blue">GB</span>
@@ -1749,7 +1842,6 @@
                           </div>
                         </div>
 
-                        <!-- Expiry Countdown Bar -->
                         <div class="w-full mt-3 pt-2.5 border-t border-slate-100">
                           <div class="flex justify-between items-center text-[10px] font-bold mb-1">
                             <span class="text-slate-500">⏳ Hết hạn sau:</span>
@@ -1764,7 +1856,6 @@
                         </div>
                       </div>
 
-                      <!-- Quick Action Button -->
                       <button type="button" class="btn-tactile w-full py-2.5 rounded-xl bg-gradient-to-r from-tabi-orange to-tabi-amber text-white text-[11px] font-black shadow-md shadow-tabi-orange/20 flex items-center justify-center gap-1.5">
                         <span>+</span> Nạp Thêm Dung Lượng (Top-up)
                       </button>
@@ -1773,7 +1864,6 @@
 
                   <!-- Screen 2: SIM Courier -->
                   <div class="bento-screen" data-screen-index="2">
-                    <!-- Top App Nav -->
                     <div class="px-4 py-2.5 bg-white border-b border-slate-100 flex items-center justify-between">
                       <div class="flex items-center gap-1.5 text-xs font-bold text-tabi-navy">
                         <span class="text-base leading-none">‹</span>
@@ -1816,7 +1906,6 @@
 
                   <!-- Screen 3: Compatibility Scanner -->
                   <div class="bento-screen" data-screen-index="3">
-                    <!-- Top App Nav -->
                     <div class="px-4 py-2.5 bg-white border-b border-slate-100 flex items-center justify-between">
                       <div class="flex items-center gap-1.5 text-xs font-bold text-tabi-navy">
                         <span class="text-base leading-none">‹</span>
@@ -1831,7 +1920,7 @@
                       </div>
                       <h4 class="text-sm font-black text-tabi-navy leading-tight">Máy Bạn Hỗ Trợ eSIM</h4>
                       <p class="text-[10px] text-slate-500 mt-1 max-w-[200px] leading-relaxed">
-                        Phát hiện: <strong class="text-tabi-navy">iPhone 16 Pro</strong> (iOS 18.1). Chip eUICC sẵn sàng nạp tối đa 8 eSIM du lịch.
+                        Phát hiện: <strong class="text-tabi-navy" id="screen3-device-name">iPhone / Android</strong>. Chip eUICC sẵn sàng nạp tối đa 8 eSIM du lịch.
                       </p>
                       <div class="mt-4 px-3 py-1.5 rounded-xl bg-blue-50 border border-blue-200 text-[10px] font-extrabold text-tabi-blue">
                         An tâm đặt eSIM ngay hôm nay!
@@ -1843,27 +1932,22 @@
 
                 <!-- 3. Real App 3M Renewal Bottom Tab Bar (Always on Bottom) -->
                 <div class="h-13 bg-white border-t border-slate-200/80 px-2 flex items-center justify-around text-[8px] font-semibold text-slate-400 z-30 shrink-0 select-none">
-                  <!-- Home -->
                   <div class="flex flex-col items-center gap-0.5 cursor-pointer hover:text-tabi-blue transition-colors">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                     <span>Trang chủ</span>
                   </div>
-                  <!-- Cart -->
                   <div class="flex flex-col items-center gap-0.5 cursor-pointer hover:text-tabi-blue transition-colors">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
                     <span>Giỏ hàng</span>
                   </div>
-                  <!-- My SIM (Active Highlighted) -->
                   <div class="flex flex-col items-center gap-0.5 text-tabi-orange font-bold cursor-pointer">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM9 19H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V9h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2z"/></svg>
                     <span>SIM của tôi</span>
                   </div>
-                  <!-- Rewards -->
                   <div class="flex flex-col items-center gap-0.5 cursor-pointer hover:text-tabi-blue transition-colors">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
                     <span>Điểm thưởng</span>
                   </div>
-                  <!-- Account -->
                   <div class="flex flex-col items-center gap-0.5 cursor-pointer hover:text-tabi-blue transition-colors">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                     <span>Tài khoản</span>
@@ -1875,6 +1959,279 @@
 
           </div>
 
+        </div>
+
+        <!-- Interactive Device Model Dropdown Tool -->
+        <div class="mt-12 max-w-3xl mx-auto apple-reveal delay-200">
+          <div class="impeccable-card p-6 sm:p-8 rounded-3xl border border-blue-200/80 bg-white/95 shadow-lg">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-blue-50 text-tabi-blue flex items-center justify-center font-bold text-lg">
+                  📱
+                </div>
+                <div>
+                  <h4 class="text-sm font-black text-slate-900">Tra Cứu Dòng Máy Cụ Thể Của Bạn</h4>
+                  <p class="text-xs text-slate-500 font-medium">Kiểm tra ngay điện thoại của bạn có dùng được eSIM hay không</p>
+                </div>
+              </div>
+              <div id="detected-device-badge" class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span id="detected-device-text">Đang nhận diện...</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 mt-5">
+              <div class="sm:col-span-8">
+                <label for="deviceSelectInput" class="block text-xs font-bold text-slate-600 mb-1.5">Chọn mẫu máy của bạn:</label>
+                <select id="deviceSelectInput" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-xs sm:text-sm font-bold text-slate-800 bg-white focus:outline-none focus:border-tabi-sky shadow-xs">
+                  <option value="iphone_new">Apple iPhone 14 / 15 / 16 Series (Hỗ trợ eSIM 100%)</option>
+                  <option value="iphone_mid">Apple iPhone 12 / 13 Series (Hỗ trợ eSIM 100%)</option>
+                  <option value="iphone_old">Apple iPhone XS / XR / 11 (Hỗ trợ eSIM 100%)</option>
+                  <option value="samsung_s">Samsung Galaxy S20 / S21 / S22 / S23 / S24 Ultra (Hỗ trợ eSIM 100%)</option>
+                  <option value="samsung_z">Samsung Galaxy Z Fold / Z Flip (Hỗ trợ eSIM 100%)</option>
+                  <option value="google_pixel">Google Pixel 4 / 5 / 6 / 7 / 8 / 9 (Hỗ trợ eSIM 100%)</option>
+                  <option value="xiaomi_high">Xiaomi 13 / 14 / 13T Pro (Hỗ trợ eSIM 100%)</option>
+                  <option value="iphone_legacy">Apple iPhone 7 / 8 / X đời cũ (Chưa hỗ trợ - Dùng SIM vật lý TabiGo)</option>
+                  <option value="samsung_a">Samsung Galaxy Dòng A phổ thông (Chưa hỗ trợ - Dùng SIM vật lý TabiGo)</option>
+                </select>
+              </div>
+              <div class="sm:col-span-4 flex items-end">
+                <a href="#download" class="w-full btn-tactile py-3 px-4 rounded-xl bg-tabi-navy hover:bg-tabi-blue text-white text-xs font-bold text-center shadow-md">
+                  Tải App Cài Đặt Ngay
+                </a>
+              </div>
+            </div>
+
+            <!-- Dynamic Device Result Feedback -->
+            <div id="device-result-alert" class="mt-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 flex items-center gap-2">
+              <span>✅</span>
+              <span id="device-result-message">Dòng máy này hỗ trợ eSIM hoàn hảo. Bạn chỉ mất 60 giây để cài đặt gói cước vào máy.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ĐẶC QUYỀN 3M: PHÔI SIM TRẮNG THÔNG MINH CHO MÁY CHƯA CÓ ESIM -->
+        <div class="mt-10 max-w-4xl mx-auto apple-reveal delay-300">
+          <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#002244] via-[#003B75] to-[#0055A5] text-white border border-white/20 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+              
+              <div class="text-left max-w-xl">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-300/30 text-[11px] font-black uppercase tracking-wider mb-2.5">
+                  <span>💳 Sáng Chế Độc Quyền Hệ Sinh Thái 3M</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-black text-white leading-snug">
+                  Máy Bạn Chưa Có eSIM? <br class="hidden sm:inline">
+                  Đã Có <span class="text-gradient-orange">"Phôi SIM Trắng 3M"</span> Dùng Trọn Đời!
+                </h3>
+                <p class="text-xs sm:text-sm text-sky-100 mt-2 leading-relaxed font-medium">
+                  Không bao giờ phải vứt sim cũ! Bạn chỉ cần sở hữu 1 thẻ Phôi SIM Trắng TabiGo duy nhất. Mỗi khi xuất ngoại, mở App quét mã QR trên phôi SIM để nạp data tức thì cho 150+ quốc gia trong 30 giây.
+                </p>
+
+                <!-- 3 Distinct Advantages -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 pt-4 border-t border-white/10 text-xs">
+                  <div class="flex items-start gap-2">
+                    <span class="text-amber-400 font-black text-sm">01.</span>
+                    <span class="text-slate-200">Giao hỏa tốc 2 giờ tận nhà tại Hà Nội &amp; TP.HCM</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-amber-400 font-black text-sm">02.</span>
+                    <span class="text-slate-200">Nhận tại quầy TabiGo Sân Bay Nội Bài &amp; Tân Sơn Nhất</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-amber-400 font-black text-sm">03.</span>
+                    <span class="text-slate-200">Tái sử dụng vĩnh viễn, nạp data trực tiếp qua App</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Blank SIM Card Mockup -->
+              <div class="shrink-0 w-full lg:w-auto flex flex-col items-center">
+                <div class="w-64 h-40 rounded-2xl bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 p-4 border border-amber-400/40 shadow-2xl relative flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="w-6 h-6 rounded-lg bg-tabi-sky flex items-center justify-center text-white text-xs font-black">T</div>
+                      <span class="text-xs font-black text-white">Tabi<span class="text-tabi-sky">Go</span></span>
+                    </div>
+                    <span class="text-[9px] px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-bold border border-amber-400/30">Phôi SIM Trắng 3M</span>
+                  </div>
+
+                  <!-- Smart Chip & QR Viewfinder Preview -->
+                  <div class="flex items-center justify-between px-2">
+                    <div class="w-10 h-8 rounded-md bg-gradient-to-br from-amber-300 to-amber-600 border border-amber-200 shadow-sm flex items-center justify-center">
+                      <div class="w-7 h-5 border border-amber-900/30 rounded-xs grid grid-cols-2 gap-0.5"></div>
+                    </div>
+                    <div class="w-12 h-12 rounded-lg bg-white p-1 shadow-sm flex items-center justify-center">
+                      <svg class="w-full h-full text-slate-900" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 3h6v6H3V3zm2 2v2h2V5H5zm8-2h6v6h-6V3zm2 2v2h2V5h-2zM3 13h6v6H3v-6zm2 2v2h2v-2H5zm10 0h2v2h-2v-2zm-2 2h2v2h-2v-2zm4 0h2v2h-2v-2zm-2 2h2v2h-2v-2zm2-6h2v2h-2v-2zm-4-2h2v2h-2v-2z"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 font-mono">
+                    <span>3M-UNIVERSAL-SIM</span>
+                    <span class="text-emerald-400 font-bold">READY TO SCAN</span>
+                  </div>
+                </div>
+
+                <a href="#download" class="mt-3 btn-tactile inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-black shadow-md">
+                  <span>Đặt Phôi SIM Trắng Giao Hỏa Tốc</span>
+                  <span>🚀</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================== -->
+    <!-- 7.5. ĐẶC QUYỀN 3M & DU LỊCH 5 SAO (ECOSYSTEM PERKS)   -->
+    <!-- ==================================================== -->
+    <section id="perks" class="py-14 sm:py-18 relative bg-white border-y border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 apple-reveal">
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            <span class="text-tabi-blue">Hệ Sinh Thái 3M Viễn Thông</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Đặc Quyền Dành Riêng Cho <span class="text-gradient-sky">Khách Hàng TabiGo</span>
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm font-medium">
+            Không chỉ là chiếc eSIM du lịch, TabiGo mang đến trọn bộ giải pháp an tâm kết nối toàn cầu.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          
+          <!-- Card 1 -->
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-tabi-blue flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              🛡️
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Bảo Hiểm Kết Nối 100%</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Cam kết hoàn tiền 100% trong vòng 24 giờ nếu có bất kỳ sự cố kỹ thuật nào khiến bạn không thể truy cập Internet.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-tabi-orange flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              ⭐
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Tích Điểm Tabi Points</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Mỗi 10.000đ chi tiêu = 1 điểm. Tích lũy đổi voucher giảm giá 20k-100k cho chuyến du lịch tiếp theo của bạn và gia đình.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="apple-reveal delay-150 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              🔒
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Tặng Kèm VPN Du Lịch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Tích hợp VPN mã hóa dữ liệu an toàn khi bắt Wi-Fi miễn phí tại sân bay, khách sạn, bảo vệ tài khoản ngân hàng và Zalo.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="apple-reveal delay-200 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              💬
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">CSKH Tiếng Việt 24/7</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Livechat trực tiếp trong ứng dụng. Đội ngũ kỹ thuật viên người Việt túc trực 24/7, không lo rào cản ngôn ngữ nơi xứ người.
+            </p>
+          </div>
+
+          <!-- Card 5 (Mới - Nghiệp vụ 3M VAT) -->
+          <div class="apple-reveal delay-250 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              📄
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Hóa Đơn Điện Tử VAT Đỏ</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Xuất hóa đơn GTGT điện tử chuẩn Tổng Cục Thuế chỉ sau 5 phút. Tự động tra cứu mã số thuế cho cơ quan &amp; khách công tác.
+            </p>
+          </div>
+
+          <!-- Card 6 (Mới - Nghiệp vụ 3M Referral) -->
+          <div class="apple-reveal delay-300 impeccable-card p-6 rounded-3xl">
+            <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl font-bold mb-4 shadow-xs">
+              👥
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Thưởng Giới Thiệu Bạn Bè</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              Chia sẻ mã của bạn: bạn bè nhận ngay voucher -10%, bạn nhận thêm 20 Tabi Points cho mỗi lượt tải app và kích hoạt thành công.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Tabi Points Loyalty & Rewards Simulator -->
+        <div class="mt-10 max-w-4xl mx-auto apple-reveal delay-200">
+          <div class="impeccable-card p-6 sm:p-8 rounded-3xl border border-amber-200/80 bg-gradient-to-r from-amber-50/40 via-white to-orange-50/30 shadow-md">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-amber-100">
+              <div class="flex items-center gap-2.5">
+                <div class="w-10 h-10 rounded-2xl bg-amber-100 text-tabi-orange flex items-center justify-center font-black text-xl">
+                  🎁
+                </div>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Mô Phỏng Tích &amp; Đổi Điểm Tabi Points</h4>
+                  <p class="text-xs text-slate-500 font-medium">Tỷ lệ quy đổi minh bạch: 10.000đ = 1 Point. Đổi voucher hoặc eSIM miễn phí!</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-[10px] text-slate-500 font-bold uppercase">Mã ưu đãi của bạn</div>
+                <div class="text-xs font-black text-tabi-orange bg-amber-100/80 px-2.5 py-1 rounded-lg inline-block mt-0.5">TABIGO10 (+20 Pts)</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mt-6">
+              
+              <!-- Left: Sliders -->
+              <div class="md:col-span-7 space-y-4">
+                <div>
+                  <div class="flex items-center justify-between text-xs font-bold mb-1.5">
+                    <span class="text-slate-700">Mức chi tiêu eSIM của bạn:</span>
+                    <span class="text-tabi-navy font-black text-sm" id="loyalty-spend-display">500.000 đ</span>
+                  </div>
+                  <input type="range" id="loyalty-spend-slider" min="100000" max="2000000" step="50000" value="500000" class="cursor-pointer" aria-label="Mức chi tiêu mô phỏng" />
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200">
+                  <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+                    <span>👥 Giới thiệu thêm bạn bè:</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <button type="button" id="btn-friend-minus" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 font-bold text-slate-700 flex items-center justify-center cursor-pointer">-</button>
+                    <span class="text-xs font-black text-tabi-navy w-6 text-center" id="loyalty-friends-count">2</span>
+                    <button type="button" id="btn-friend-plus" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 font-bold text-slate-700 flex items-center justify-center cursor-pointer">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Rewards Conversion Box -->
+              <div class="md:col-span-5 p-5 rounded-2xl bg-gradient-to-br from-[#003B75] to-[#002244] text-white text-center shadow-lg">
+                <div class="text-[11px] font-bold text-sky-200 uppercase tracking-wider">Tổng Điểm Tích Lũy</div>
+                <div class="text-4xl font-black text-amber-300 mt-1" id="loyalty-total-points">90 Pts</div>
+                <div class="mt-3 pt-3 border-t border-white/10 text-xs space-y-1">
+                  <div class="text-slate-300">Quy đổi ngay quà tặng:</div>
+                  <div class="font-extrabold text-emerald-400 text-sm" id="loyalty-reward-text">Voucher Giảm 50.000 đ</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1902,7 +2259,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- Step 1 -->
-          <div class="apple-reveal delay-75 impeccable-card p-8 rounded-3xl relative">
+          <div class="apple-reveal delay-100 impeccable-card p-8 rounded-3xl relative">
             <span class="text-4xl font-black text-blue-100 absolute top-5 right-6">01</span>
             <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-200 text-tabi-blue flex items-center justify-center text-xl font-black mb-4">
               📱
@@ -1914,7 +2271,7 @@
           </div>
 
           <!-- Step 2 -->
-          <div class="apple-reveal delay-150 impeccable-card p-8 rounded-3xl relative">
+          <div class="apple-reveal delay-100 impeccable-card p-8 rounded-3xl relative">
             <span class="text-4xl font-black text-blue-100 absolute top-5 right-6">02</span>
             <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 text-tabi-orange flex items-center justify-center text-xl font-black mb-4">
               ⚡
@@ -1926,7 +2283,7 @@
           </div>
 
           <!-- Step 3 -->
-          <div class="apple-reveal delay-225 impeccable-card p-8 rounded-3xl relative">
+          <div class="apple-reveal delay-200 impeccable-card p-8 rounded-3xl relative">
             <span class="text-4xl font-black text-blue-100 absolute top-5 right-6">03</span>
             <div class="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center text-xl font-black mb-4">
               ✈️
@@ -1964,7 +2321,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- Review 1 -->
-          <div class="apple-reveal delay-75 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="text-tabi-amber text-sm mb-3">★★★★★</div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic font-medium">
@@ -1976,46 +2333,46 @@
                 LA
               </div>
               <div>
-                <div class="text-xs font-bold text-tabi-navy">Chị Lan Anh</div>
-                <div class="text-[10px] text-slate-500 font-medium">Travel Blogger • Đi Nhật Bản</div>
+                <div class="text-xs font-bold text-slate-900">Lê Lan Anh</div>
+                <div class="text-[10px] text-slate-400 font-semibold">Travel Blogger • Đã đi Nhật Bản</div>
               </div>
             </div>
           </div>
 
           <!-- Review 2 -->
-          <div class="apple-reveal delay-150 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-100 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="text-tabi-amber text-sm mb-3">★★★★★</div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic font-medium">
-                "Tiện nhất là máy vẫn giữ SIM chính ở Việt Nam để nhận mã OTP ngân hàng, data thì dùng eSIM TabiGo. Đi công tác qua Pháp, Đức, Ý mạng tự động chuyển vùng không phải làm gì cả."
+                "Trước đây đi Châu Âu qua 3 nước Pháp, Thụy Sĩ, Ý mua SIM rất cực vì phải đổi gói liên tục. TabiGo dùng đúng 1 eSIM cho cả 33 nước, sang biên giới tự nhảy sóng cực tiện."
               </p>
             </div>
             <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
-              <div class="w-10 h-10 rounded-full bg-sky-100 text-tabi-sky flex items-center justify-center font-black text-xs">
-                MĐ
+              <div class="w-10 h-10 rounded-full bg-orange-100 text-tabi-orange flex items-center justify-center font-black text-xs">
+                MT
               </div>
               <div>
-                <div class="text-xs font-bold text-tabi-navy">Anh Minh Đức</div>
-                <div class="text-[10px] text-slate-500 font-medium">Doanh nhân • Công tác Châu Âu</div>
+                <div class="text-xs font-bold text-slate-900">Minh Trí</div>
+                <div class="text-[10px] text-slate-400 font-semibold">Du lịch tự túc • Gói Châu Âu 33 Nước</div>
               </div>
             </div>
           </div>
 
           <!-- Review 3 -->
-          <div class="apple-reveal delay-225 impeccable-card apple-spotlight-card p-6 rounded-3xl flex flex-col justify-between">
+          <div class="apple-reveal delay-200 impeccable-card p-6 rounded-3xl flex flex-col justify-between">
             <div>
               <div class="text-tabi-amber text-sm mb-3">★★★★★</div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic font-medium">
-                "Cài đặt cực kỳ dễ, vừa thanh toán xong bấm 1 nút là nạp thẳng vào máy luôn qua eUICC. Giá lại rẻ hơn 50% so với mua SIM vật lý ở quầy sân bay Incheon Hàn Quốc."
+                "Thích nhất tính năng giữ nguyên SIM gốc Việt Nam để nhận mã OTP ngân hàng chuyển khoản, còn data thì xài qua eSIM TabiGo. CSKH 24/7 nhiệt tình số 1!"
               </p>
             </div>
             <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
-              <div class="w-10 h-10 rounded-full bg-orange-100 text-tabi-orange flex items-center justify-center font-black text-xs">
-                HN
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-xs">
+                HT
               </div>
               <div>
-                <div class="text-xs font-bold text-tabi-navy">Hoàng Nam</div>
-                <div class="text-[10px] text-slate-500 font-medium">Du lịch tự túc • Đi Hàn Quốc</div>
+                <div class="text-xs font-bold text-slate-900">Hoàng Thu Trang</div>
+                <div class="text-[10px] text-slate-400 font-semibold">Doanh nhân • Đã đi Hàn Quốc</div>
               </div>
             </div>
           </div>
@@ -2026,81 +2383,98 @@
     </section>
 
     <!-- ==================================================== -->
-    <!-- 10. CALL TO ACTION / DOWNLOAD APP CARD               -->
+    <!-- 10. FINAL DOWNLOAD CTA BANNER WITH VOUCHER TABIGO10   -->
     <!-- ==================================================== -->
     <section id="download" class="py-16 sm:py-20 relative bg-gradient-to-b from-white via-blue-50/40 to-[#EBF5FC]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="apple-reveal rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-tabi-navy via-tabi-darkNavy to-[#0B1F3A] text-white shadow-2xl relative overflow-hidden">
+        <div class="apple-reveal rounded-3xl sm:rounded-[36px] bg-gradient-to-br from-[#003B75] via-[#00478F] to-[#002B59] p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl shadow-blue-950/20 border border-white/10">
           
-          <!-- Ambient Orange Glow -->
-          <div class="absolute -top-20 -right-20 w-80 h-80 bg-tabi-orange/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+          <!-- Background Ambient Lights -->
+          <div class="absolute -top-24 -right-24 w-80 h-80 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-orange-400/20 rounded-full blur-3xl pointer-events-none"></div>
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             
             <!-- Left Info (7 cols) -->
-            <div class="lg:col-span-7 flex flex-col items-start text-left">
-              <span class="px-3.5 py-1 rounded-full text-xs font-black bg-tabi-orange text-white mb-4 shadow">
-                ƯU ĐÃI CHUYẾN BAY ĐẦU TIÊN
-              </span>
-              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-4">
-                Tải TabiGo Nhận Ngay Voucher Giảm 10%
+            <div class="lg:col-span-7 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs font-bold text-sky-200">
+                <span>🎁</span> Ưu Đãi Độc Quyền Cho Người Dùng Mới
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                Sẵn Sàng Cho Chuyến Du Lịch <span class="text-gradient-orange">Tiếp Theo?</span>
               </h2>
-              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 max-w-xl font-medium">
-                Khám phá thế giới không giới hạn cùng eSIM TabiGo. Kích hoạt trong 1 phút, nhận hỗ trợ 24/7 từ chuyên viên viễn thông người Việt.
+
+              <p class="text-sm sm:text-base text-sky-100/90 leading-relaxed max-w-xl font-normal">
+                Tải App TabiGo ngay hôm nay để nhận Voucher <strong class="text-amber-300 font-bold">giảm 10%</strong> cho đơn hàng eSIM đầu tiên. Kích hoạt trong 1 phút, không lo tháo SIM, hạ cánh là có Internet 5G.
               </p>
 
-              <!-- App Store & Google Play Badges -->
-              <div class="flex flex-wrap items-center gap-3">
-                <a href="#" class="btn-tactile inline-flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all hover:scale-105">
-                  <svg class="w-6 h-6 fill-current text-white flex-shrink-0" viewBox="0 0 24 24">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 1.01-2.85-.9.04-1.99.6-2.64 1.35-.58.66-1.09 1.73-1.02 2.76 1.01.08 2.03-.51 2.65-1.26z"/>
+              <!-- Voucher Box with Copy Button -->
+              <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 max-w-md flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[10px] text-sky-200 uppercase tracking-wider font-extrabold">Mã Giảm Giá Độc Quyền:</div>
+                  <div class="text-xl font-black text-amber-300 tracking-wider">TABIGO10</div>
+                </div>
+                <button type="button" id="copy-voucher-final-btn" class="btn-tactile px-4 py-2 rounded-xl bg-white text-tabi-navy text-xs font-extrabold hover:bg-sky-50 shadow-md">
+                  Sao Chép Mã 📋
+                </button>
+              </div>
+
+              <!-- Store Badges -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="#" class="btn-tactile btn-store-titanium inline-flex items-center gap-3 px-5 py-3 rounded-2xl text-white">
+                  <svg class="w-6 h-6 text-white fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.81 1.43-.59.68-1.12 1.76-.98 2.79 1.07.08 2.16-.63 2.78-1.38z"/>
                   </svg>
-                  <div class="flex flex-col text-left">
-                    <span class="text-[9px] text-slate-300 font-medium">Tải về từ</span>
-                    <span class="text-xs font-bold leading-tight">App Store</span>
+                  <div class="text-left">
+                    <div class="text-[10px] text-slate-400 font-medium leading-none">Tải về từ</div>
+                    <div class="text-sm font-bold tracking-tight mt-0.5">App Store</div>
                   </div>
                 </a>
 
-                <a href="#" class="btn-tactile inline-flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all hover:scale-105">
-                  <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24">
-                    <path d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1 9.4-9.4v-.2L3.6 2.2z" fill="#00E5FF"/>
-                    <path d="M16.3 15.7l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.1z" fill="#FFD600"/>
-                    <path d="M13.1 12.3L3.6 21.8c.4.4 1 .5 1.7.1l11.1-6.3-3.3-3.3z" fill="#FF3D00"/>
-                    <path d="M13.1 12.3L16.4 9l-11.1-6.3c-.7-.4-1.3-.3-1.7.1l9.5 9.5z" fill="#00C853"/>
+                <a href="#" class="btn-tactile btn-store-titanium inline-flex items-center gap-3 px-5 py-3 rounded-2xl text-white">
+                  <svg class="w-6 h-6 text-white fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a1.59 1.59 0 0 1-.61-.914V2.728c.118-.363.33-.679.609-.914zm11.233 11.233l2.36 2.36-11.834 6.78 9.474-9.14zm0-2.094L5.368 1.813l11.834 6.781-2.36 2.36zm1.096 1.047l3.87-2.218a1.23 1.23 0 0 1 0 2.136l-3.87 2.218-1.047-1.068 1.047-1.068z"/>
                   </svg>
-                  <div class="flex flex-col text-left">
-                    <span class="text-[9px] text-slate-300 font-medium">Tải trên</span>
-                    <span class="text-xs font-bold leading-tight">Google Play</span>
+                  <div class="text-left">
+                    <div class="text-[10px] text-slate-400 font-medium leading-none">Tải trên</div>
+                    <div class="text-sm font-bold tracking-tight mt-0.5">Google Play</div>
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- Right QR Code (5 cols) -->
-            <div class="lg:col-span-5 flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
-              <div class="w-40 h-40 p-2 rounded-2xl bg-white shadow-xl flex items-center justify-center mb-3">
-                <svg viewBox="0 0 160 160" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="160" height="160" rx="10" fill="#FFFFFF"/>
-                  <rect x="12" y="12" width="40" height="40" rx="8" fill="#00478F"/>
-                  <rect x="20" y="20" width="24" height="24" rx="4" fill="#FFFFFF"/>
-                  <rect x="26" y="26" width="12" height="12" rx="2" fill="#00478F"/>
-                  <rect x="108" y="12" width="40" height="40" rx="8" fill="#00478F"/>
-                  <rect x="116" y="20" width="24" height="24" rx="4" fill="#FFFFFF"/>
-                  <rect x="122" y="26" width="12" height="12" rx="2" fill="#00478F"/>
-                  <rect x="12" y="108" width="40" height="40" rx="8" fill="#00478F"/>
-                  <rect x="20" y="116" width="24" height="24" rx="4" fill="#FFFFFF"/>
-                  <rect x="26" y="122" width="12" height="12" rx="2" fill="#00478F"/>
-                  <rect x="60" y="24" width="8" height="8" rx="1" fill="#00478F"/>
-                  <rect x="76" y="24" width="8" height="8" rx="1" fill="#00478F"/>
-                  <rect x="60" y="60" width="8" height="8" rx="1" fill="#00478F"/>
-                  <rect x="92" y="60" width="8" height="8" rx="1" fill="#FF9500"/>
-                  <rect x="64" y="64" width="32" height="32" rx="6" fill="#00A8FF"/>
-                  <circle cx="80" cy="80" r="10" fill="#FFFFFF" opacity="0.9"/>
-                </svg>
+            <!-- Right QR Box (5 cols) -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center text-center p-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20">
+              <div class="qr-holo-card mb-3">
+                <div class="qr-holo-inner w-36 h-36 flex items-center justify-center">
+                  <svg class="w-full h-full text-tabi-navy" viewBox="0 0 100 100" fill="currentColor">
+                    <rect x="0" y="0" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="5" y="5" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="9" y="9" width="12" height="12" fill="#00478F" />
+                    <rect x="70" y="0" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="75" y="5" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="79" y="9" width="12" height="12" fill="#00478F" />
+                    <rect x="0" y="70" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="5" y="75" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="9" y="79" width="12" height="12" fill="#00478F" />
+                    <rect x="40" y="10" width="8" height="8" fill="#00A8FF" />
+                    <rect x="52" y="10" width="8" height="8" fill="#00478F" />
+                    <rect x="10" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="24" y="42" width="8" height="8" fill="#FF9500" />
+                    <rect x="38" y="38" width="24" height="24" rx="4" fill="#00A8FF" />
+                    <rect x="70" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="84" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="40" y="70" width="8" height="8" fill="#00478F" />
+                    <rect x="52" y="70" width="8" height="8" fill="#FF9500" />
+                    <rect x="70" y="70" width="8" height="8" fill="#00478F" />
+                    <rect x="84" y="84" width="8" height="8" fill="#00A8FF" />
+                  </svg>
+                </div>
               </div>
-              <span class="text-xs font-bold text-white tracking-wide">Quét Camera Tải Ứng Dụng</span>
-              <span class="text-[10px] text-slate-300 mt-0.5">Tương thích với cả iPhone &amp; Android</span>
+              <div class="text-sm font-bold text-white">Quét Bằng Camera Điện Thoại</div>
+              <div class="text-xs text-sky-200 mt-0.5">Tải ứng dụng tức thì cho iOS &amp; Android</div>
             </div>
 
           </div>
@@ -2111,85 +2485,101 @@
     </section>
 
     <!-- ==================================================== -->
-    <!-- 11. FAQ ACCORDION (IMPECCABLE CARDS)                 -->
+    <!-- 11. FAQ ACCORDION                                    -->
     <!-- ==================================================== -->
     <section id="faq" class="py-16 sm:py-20 relative bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-12 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-blue mb-2 block">GIẢI ĐÁP THẮC MẮC</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Câu Hỏi Thường Gặp
+        <div class="text-center max-w-2xl mx-auto mb-12 apple-reveal">
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            <span class="text-tabi-blue">Giải Đáp Thắc Mắc</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Câu Hỏi <span class="text-gradient-sky">Thường Gặp</span>
           </h2>
-          <p class="text-slate-600 text-sm font-medium">
-            Mọi điều bạn cần biết trước khi mua và sử dụng eSIM TabiGo cho chuyến du lịch.
+          <p class="text-slate-600 text-sm sm:text-base font-medium">
+            Mọi điều bạn cần biết trước khi mua và sử dụng eSIM TabiGo.
           </p>
         </div>
 
-        <div class="flex flex-col gap-3.5" id="faq-accordion">
+        <div class="space-y-4">
           
           <!-- Q1 -->
-          <div class="apple-reveal delay-75 impeccable-card faq-item rounded-2xl overflow-hidden">
-            <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-tabi-navy text-sm sm:text-base">
-              <span>1. Thiết bị nào có thể cài đặt được eSIM TabiGo?</span>
-              <span class="faq-chevron text-slate-400 text-xl font-normal">▾</span>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                Hầu hết các dòng iPhone từ iPhone XS, XR trở lên (bản quốc tế) và các dòng Samsung Galaxy S20, S21, S22, S23, S24, Z Flip, Z Fold, Google Pixel 3 trở lên đều hỗ trợ eSIM. Khi bạn mở app TabiGo, hệ thống sẽ tự động quét và thông báo máy của bạn có hỗ trợ eSIM hay không.
-              </div>
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                eSIM là gì? Điện thoại nào dùng được eSIM?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              eSIM (Embedded SIM) là một con chip SIM điện tử được hàn trực tiếp vào bo mạch điện thoại của bạn, không cần que chọc để tháo lắp. Hầu hết các dòng máy từ iPhone XS/XR trở lên (iPhone 11, 12, 13, 14, 15, 16), Samsung Galaxy S20 trở lên, Z Fold/Flip và Google Pixel 4 trở lên đều hỗ trợ eSIM 100%.
             </div>
           </div>
 
           <!-- Q2 -->
-          <div class="apple-reveal delay-150 impeccable-card faq-item rounded-2xl overflow-hidden">
-            <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-tabi-navy text-sm sm:text-base">
-              <span>2. Cài eSIM có làm mất số điện thoại và SIM chính ở Việt Nam không?</span>
-              <span class="faq-chevron text-slate-400 text-xl font-normal">▾</span>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                Hoàn toàn KHÔNG! Điện thoại hỗ trợ tính năng Dual-SIM (2 SIM hoạt động song song). Bạn vẫn giữ nguyên SIM vật lý Việt Nam để nhận tin nhắn OTP ngân hàng miễn phí, trong khi eSIM TabiGo được dùng làm đường truyền dữ liệu data 5G để lướt mạng tại nước ngoài.
-              </div>
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                Tôi nên cài đặt eSIM trước khi đi hay đến nơi mới cài?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              Bạn nên cài đặt eSIM vào máy từ ở nhà trước ngày khởi hành (cần có kết nối Wi-Fi ổn định). Thời hạn của gói cước CHỈ BẮT ĐẦU TÍNH khi bạn đáp máy bay xuống nước đến và máy bắt đầu kết nối vào trạm phát sóng viễn thông bản địa.
             </div>
           </div>
 
           <!-- Q3 -->
-          <div class="apple-reveal delay-225 impeccable-card faq-item rounded-2xl overflow-hidden">
-            <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-tabi-navy text-sm sm:text-base">
-              <span>3. Tôi nên kích hoạt eSIM trước khi bay hay khi đến nơi?</span>
-              <span class="faq-chevron text-slate-400 text-xl font-normal">▾</span>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                Bạn nên cài đặt hồ sơ eSIM vào máy trước chuyến bay từ 1 - 2 ngày khi đang có Wi-Fi ổn định ở nhà. Thời hạn gói cước chỉ bắt đầu tính khi bạn hạ cánh tại nước ngoài và máy kết nối vào trạm phát sóng viễn thông của quốc gia đó.
-              </div>
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                Nếu SIM/eSIM không có mạng thì hỗ trợ như thế nào?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              TabiGo có đội ngũ hỗ trợ kỹ thuật viên người Việt túc trực Livechat 24/7 trực tiếp ngay trong ứng dụng hoặc qua Zalo OA / Hotline. Nếu sau khi hỗ trợ cài đặt mà thiết bị vẫn không thể kết nối mạng do lỗi hệ thống, TabiGo cam kết hoàn tiền 100% trong vòng 24 giờ.
             </div>
           </div>
 
           <!-- Q4 -->
-          <div class="apple-reveal delay-300 impeccable-card faq-item rounded-2xl overflow-hidden">
-            <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-tabi-navy text-sm sm:text-base">
-              <span>4. Nếu máy tôi không hỗ trợ eSIM thì TabiGo có phương án nào không?</span>
-              <span class="faq-chevron text-slate-400 text-xl font-normal">▾</span>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                TabiGo cung cấp dịch vụ giao SIM vật lý (phôi SIM trắng) tận nhà trong 2 giờ tại Hà Nội/TP.HCM hoặc bạn có thể nhận trực tiếp tại quầy dịch vụ của chúng tôi ở sân bay Nội Bài / Tân Sơn Nhất.
-              </div>
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                Dùng eSIM có nhận được mã OTP ngân hàng từ SIM Việt Nam không?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              Hoàn toàn có! Điện thoại cho phép bật song song 2 SIM: SIM vật lý chính ở Việt Nam để nhận cuộc gọi và tin nhắn SMS OTP ngân hàng, còn eSIM TabiGo được chọn làm nguồn Data dữ liệu di động tốc độ cao.
             </div>
           </div>
 
           <!-- Q5 -->
-          <div class="apple-reveal delay-375 impeccable-card faq-item rounded-2xl overflow-hidden">
-            <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-tabi-navy text-sm sm:text-base">
-              <span>5. Chính sách hoàn tiền của TabiGo như thế nào nếu SIM bị lỗi?</span>
-              <span class="faq-chevron text-slate-400 text-xl font-normal">▾</span>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                TabiGo cam kết hoàn tiền 100% nếu hồ sơ eSIM gặp lỗi kỹ thuật từ hệ thống nhà mạng mà chuyên viên hỗ trợ 24/7 của chúng tôi không thể khắc phục được cho bạn.
-              </div>
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                Máy đời cũ chưa hỗ trợ eSIM thì mua bằng cách nào?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              TabiGo cung cấp dịch vụ đặt SIM vật lý giao hỏa tốc tận nhà trong 2 giờ tại Hà Nội &amp; TP.HCM, hoặc nhận tại quầy sân bay Nội Bài / Tân Sơn Nhất trước giờ bay. SIM vật lý có sẵn que chọc SIM và lắp vào dùng ngay.
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item impeccable-card rounded-2xl p-5 cursor-pointer">
+            <div class="faq-trigger flex items-center justify-between gap-4">
+              <h3 class="text-sm sm:text-base font-bold text-slate-900">
+                Tôi có thể chia sẻ Wi-Fi (Hotspot) cho người khác không?
+              </h3>
+              <span class="faq-chevron text-tabi-blue text-lg transition-transform duration-300">▼</span>
+            </div>
+            <div class="faq-content hidden mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              Tất cả các gói cước eSIM của TabiGo đều hỗ trợ chia sẻ điểm truy cập cá nhân (Personal Hotspot) cho máy tính bảng, laptop hoặc điện thoại của bạn đồng hành thoải mái.
             </div>
           </div>
 
@@ -2201,154 +2591,56 @@
   </main>
 
   <!-- ==================================================== -->
-  <!-- 12. FOOTER                                           -->
+  <!-- 12. FOOTER (4 CỘT PHÁP LÝ & BỘ CÔNG THƯƠNG)          -->
   <!-- ==================================================== -->
   <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         
-        <!-- Brand Info -->
-        <div class="flex flex-col items-start gap-3">
-          <div class="flex items-center gap-3">
-            <!-- SVG App Icon: 3D Blue Globe + Orbit + Orange Plane + Wifi Arcs -->
-            <div
-              class="w-10 h-10 rounded-2xl bg-gradient-to-b from-[#00C2FF] via-[#0094F7] to-[#0074E0] p-[2.5px] shadow-md shadow-tabi-sky/30 relative overflow-hidden flex items-center justify-center shrink-0"
-            >
-              <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
-                <!-- 3D Globe Circle -->
-                <circle cx="50" cy="50" r="32" fill="url(#footerGlobeGrad)" />
-                <defs>
-                  <radialGradient id="footerGlobeGrad" cx="38%" cy="35%" r="65%">
-                    <stop offset="0%" stop-color="#E1F7FF" />
-                    <stop offset="45%" stop-color="#38BDF8" />
-                    <stop offset="100%" stop-color="#0284C7" />
-                  </radialGradient>
-                  <linearGradient
-                    id="footerPlaneGrad"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stop-color="#FFAE00" />
-                    <stop offset="100%" stop-color="#FF6B00" />
-                  </linearGradient>
-                </defs>
-                <!-- Continents White Silhouette -->
-                <path
-                  d="M42 32c3-2 8-1 10 2 2 3 0 7-3 8-4 1-5 4-4 7s4 5 7 4 5-3 8-1c3 2 4 6 2 8-2 2-7 1-9-1-3-2-6-1-8 2-2 3-5 5-8 4-4-2-6-7-4-11 1-3 0-6-2-8-2-2-1-6 2-7 3-1 7-2 9-3z"
-                  fill="#FFFFFF"
-                  fill-opacity="0.85"
-                />
-                <path
-                  d="M55 58c3 1 6 4 5 7s-4 4-6 3-3-3-2-5c0-2 1-4 3-5z"
-                  fill="#FFFFFF"
-                  fill-opacity="0.85"
-                />
-
-                <!-- White Orbit Line looping around earth -->
-                <ellipse
-                  cx="50"
-                  cy="50"
-                  rx="42"
-                  ry="17"
-                  stroke="#FFFFFF"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-dasharray="1 1"
-                  stroke-opacity="0.75"
-                  transform="rotate(-28 50 50)"
-                />
-                <ellipse
-                  cx="50"
-                  cy="50"
-                  rx="42"
-                  ry="17"
-                  stroke="#FFFFFF"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-dasharray="5 3"
-                  transform="rotate(-28 50 50)"
-                />
-
-                <!-- Orange Paper Airplane on top right of orbit -->
-                <g transform="translate(62, 17) rotate(22)">
-                  <polygon points="12,0 0,16 6,10 12,0" fill="url(#footerPlaneGrad)" />
-                  <polygon points="12,0 6,10 16,8 12,0" fill="#FFAA00" />
-                  <polygon points="6,10 7,16 9,12 6,10" fill="#E65100" />
-                </g>
-
-                <!-- Wifi Wave Arcs on bottom right of earth -->
-                <path
-                  d="M63 68 A 14 14 0 0 1 74 79"
-                  stroke="#FFFFFF"
-                  stroke-width="2.8"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M68 64 A 20 20 0 0 1 81 77"
-                  stroke="#FFFFFF"
-                  stroke-width="2.8"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M73 60 A 26 26 0 0 1 88 75"
-                  stroke="#FFFFFF"
-                  stroke-width="2.8"
-                  stroke-linecap="round"
-                />
-              </svg>
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-[#00C2FF] to-[#0074E0] p-1 flex items-center justify-center">
+              <span class="text-white text-base font-black">T</span>
             </div>
-
-            <!-- Typography Logo: "Tabi" (White) + "Go" (Sky Blue) + Orange Airplane Accent -->
-            <div class="flex flex-col">
-              <div class="flex items-center leading-none">
-                <span class="text-xl font-black text-white">Tabi</span>
-                <span class="text-xl font-black text-tabi-sky relative flex items-center">
-                  Go
-                  <svg
-                    class="w-3 h-3 ml-0.5 text-tabi-orange transform -rotate-12 animate-plane-fly"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="m21.426 2.574-19 9a1 1 0 0 0 .044 1.832l6.877 2.457 2.457 6.877a1 1 0 0 0 1.832.044l9-19a1 1 0 0 0-1.21-1.21z"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <span class="text-[9px] text-slate-400 font-bold uppercase tracking-widest mt-0.5">eSIM Du Lịch 150+ Nước</span>
-            </div>
+            <span class="text-xl font-black text-white">Tabi<span class="text-tabi-sky">Go</span></span>
           </div>
-          <p class="text-xs leading-relaxed text-slate-400">
-            Nền tảng viễn thông du lịch quốc tế thông minh thuộc hệ sinh thái công nghệ 3M. Kết nối 150+ quốc gia với chi phí tối ưu nhất.
+          <p class="text-xs text-slate-400 leading-relaxed font-medium">
+            Ứng dụng mua eSIM &amp; SIM du lịch quốc tế giá gốc 150+ quốc gia. Kết nối tức thì, an tâm bảo hiểm 24/7. Thuộc hệ sinh thái 3M Telecom.
           </p>
+          <div class="text-xs text-slate-300 space-y-1">
+            <div>📞 Hotline 24/7: <a href="tel:19001234" class="text-white font-bold hover:underline">1900 1234</a></div>
+            <div>💬 Zalo OA: <a href="#" class="text-tabi-sky font-bold hover:underline">TabiGo Official</a></div>
+            <div>✉️ Email: <a href="mailto:support@tabigo.vn" class="text-slate-300 hover:underline">support@tabigo.vn</a></div>
+          </div>
         </div>
 
-        <!-- Quick Links -->
-        <div>
-          <div class="text-xs font-bold text-white uppercase tracking-wider mb-3">Điểm Đến Phổ Biến</div>
-          <ul class="space-y-2 text-xs">
-            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Nhật Bản 5G</a></li>
-            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Hàn Quốc 5G</a></li>
-            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Thái Lan 5G</a></li>
-            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Châu Âu 33 Nước</a></li>
-            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Hoa Kỳ (Mỹ)</a></li>
+        <!-- Col 2: Destinations -->
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider mb-2">Điểm Đến Thịnh Hành</div>
+          <ul class="text-xs space-y-2">
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Nhật Bản 5G SoftBank</a></li>
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Hàn Quốc SK Telecom</a></li>
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Châu Âu 33 Nước Vodafone</a></li>
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Thái Lan 5G AIS</a></li>
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Singapore &amp; Malaysia</a></li>
+            <li><a href="#destinations" class="hover:text-white transition-colors">eSIM Mỹ &amp; Canada T-Mobile</a></li>
           </ul>
         </div>
 
-        <!-- Support -->
-        <div>
-          <div class="text-xs font-bold text-white uppercase tracking-wider mb-3">Hỗ Trợ Khách Hàng</div>
-          <ul class="space-y-2 text-xs">
-            <li>Hotline 24/7: <span class="text-tabi-orange font-bold">1900 xxxx (Hỗ trợ tiếng Việt)</span></li>
-            <li>Email: hotro@tabigo.vn</li>
-            <li>Giờ làm việc: 24/7 kể cả ngày lễ</li>
-            <li>Địa chỉ: Tầng 8, Tòa nhà 3M Intel, Hà Nội</li>
+        <!-- Col 3: Support & Legal -->
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider mb-2">Hỗ Trợ &amp; Pháp Lý</div>
+          <ul class="text-xs space-y-2">
+            <li><a href="#how-it-works" class="hover:text-white transition-colors">Hướng dẫn cài đặt eSIM</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Kiểm tra thiết bị tương thích</a></li>
+            <li><a href="#perks" class="hover:text-white transition-colors">Chính sách hoàn tiền 100%</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Điều khoản dịch vụ</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Chính sách bảo mật dữ liệu</a></li>
           </ul>
         </div>
 
-        <!-- Ministry Badge -->
+        <!-- Col 4: Ministry Badge -->
         <div class="flex flex-col items-start gap-3">
           <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Chứng Nhận Bộ Công Thương</div>
           <div class="p-2.5 bg-slate-800 rounded-xl border border-slate-700 flex items-center gap-2">
@@ -2366,17 +2658,29 @@
   </footer>
 
   <!-- ==================================================== -->
-  <!-- 13. JAVASCRIPT LOGIC (CIRCULAR LOOP & IMPECCABLE)   -->
+  <!-- 13. JAVASCRIPT LOGIC & MICRO-INTERACTIONS            -->
   <!-- ==================================================== -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-      /* ====================================================
-       * MODULE 1: APPLE-GRADE SCROLL REVEAL (BLUR & SCALE CASCADE)
-       * ==================================================== */
-      const revealElements = document.querySelectorAll('.apple-reveal');
+      /* 1. Mobile Menu Toggle */
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-      // Immediate reveal for elements already in viewport on initial load (Hero headline, pills, phone)
+      if (mobileMenuBtn && mobileDrawer) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileDrawer.classList.toggle('hidden');
+        });
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileDrawer.classList.add('hidden');
+          });
+        });
+      }
+
+      /* 2. Apple Scroll Reveal */
+      const revealElements = document.querySelectorAll('.apple-reveal');
       function checkInitialReveals() {
         const windowHeight = window.innerHeight;
         revealElements.forEach((el, idx) => {
@@ -2401,37 +2705,27 @@
           threshold: 0.08,
           rootMargin: '0px 0px -40px 0px'
         });
-
         revealElements.forEach(el => revealObserver.observe(el));
       } else {
         revealElements.forEach(el => el.classList.add('is-visible'));
       }
       setTimeout(checkInitialReveals, 80);
 
-
-      /* ====================================================
-       * MODULE 2: HERO 3D MOUSE & SCROLL PARALLAX (APPLE PRO DYNAMICS)
-       * ==================================================== */
+      /* 3. Hero 3D Parallax & Scroll Pitch */
       const heroSection = document.getElementById('heroSection');
       const heroRig = document.getElementById('hero-phone-rig');
       const badge1 = document.getElementById('hero-badge-1');
       const badge2 = document.getElementById('hero-badge-2');
-      const phoneGlare = document.getElementById('hero-phone-glare');
 
-      let targetRotX = 3;
-      let targetRotY = -5;
-      let currentRotX = 3;
-      let currentRotY = -5;
-      let targetScrollY = 0;
-      let currentScrollY = 0;
+      let targetRotX = 3, targetRotY = -5;
+      let currentRotX = 3, currentRotY = -5;
+      let targetScrollY = 0, currentScrollY = 0;
 
       if (heroSection && heroRig) {
         heroSection.addEventListener('mousemove', (e) => {
           const rect = heroSection.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width;
           const y = (e.clientY - rect.top) / rect.height;
-
-          // Constrained angles (-9 to +9 deg) for realistic phone tilt
           targetRotY = (x - 0.5) * 18;
           targetRotX = -(y - 0.5) * 14;
         });
@@ -2450,7 +2744,6 @@
           currentRotY += (targetRotY - currentRotY) * 0.07;
           currentScrollY += (targetScrollY - currentScrollY) * 0.08;
 
-          // Apple Scroll Scrubbing: Pitch phone backward and gently scale down on scroll
           const scrollFactor = Math.min(Math.max(currentScrollY / 700, 0), 1);
           const pitchAngle = currentRotX - (scrollFactor * 14);
           const scrollScale = 1 - (scrollFactor * 0.06);
@@ -2467,70 +2760,12 @@
             badge2.style.transform = `translate3d(${(currentRotY * 1.5).toFixed(1)}px, ${b2Y.toFixed(1)}px, 75px)`;
           }
 
-          if (phoneGlare) {
-            const angle = Math.round(125 + currentRotY * 2.5 + scrollFactor * 30);
-            phoneGlare.style.background = `linear-gradient(${angle}deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.06) 55%, transparent 100%)`;
-          }
-
           requestAnimationFrame(animateHeroParallax);
         }
         animateHeroParallax();
       }
 
-
-      /* ====================================================
-       * MODULE 3: APPLE MAGNETIC BUTTON ATTRACTION PHYSICS
-       * ==================================================== */
-      const magneticButtons = document.querySelectorAll('.btn-tactile, .btn-store-titanium, .luxury-pill-badge, .qr-holo-card');
-      magneticButtons.forEach(btn => {
-        btn.addEventListener('mousemove', (e) => {
-          const rect = btn.getBoundingClientRect();
-          const x = e.clientX - rect.left - rect.width / 2;
-          const y = e.clientY - rect.top - rect.height / 2;
-          btn.style.transform = `translate3d(${(x * 0.22).toFixed(1)}px, ${(y * 0.22).toFixed(1)}px, 0) scale(1.025)`;
-        });
-        btn.addEventListener('mouseleave', () => {
-          btn.style.transform = '';
-        });
-      });
-
-
-      /* ====================================================
-       * MODULE 3B: ITEM BOXES & CARDS 3D TACTILE TILT & SPOTLIGHT
-       * ==================================================== */
-      const interactiveCards = document.querySelectorAll('.bento-feature-card, .impeccable-card:not(#dest-deal-banner):not(.faq-item)');
-      interactiveCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = (e.clientX - rect.left) / rect.width - 0.5;
-          const y = (e.clientY - rect.top) / rect.height - 0.5;
-          const maxDeg = card.classList.contains('bento-feature-card') ? 7 : 4;
-          card.style.transform = `perspective(800px) translateY(-5px) rotateX(${(-y * maxDeg).toFixed(1)}deg) rotateY(${(x * maxDeg).toFixed(1)}deg)`;
-        });
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = '';
-        });
-      });
-
-      const spotlightCards = document.querySelectorAll('.apple-spotlight-card');
-      spotlightCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          card.style.setProperty('--mouse-x', `${x}px`);
-          card.style.setProperty('--mouse-y', `${y}px`);
-        });
-        card.addEventListener('mouseleave', () => {
-          card.style.setProperty('--mouse-x', '-500px');
-          card.style.setProperty('--mouse-y', '-500px');
-        });
-      });
-
-
-      /* ====================================================
-       * MODULE 4: STAT BAR ANIMATED ODOMETER COUNTERS
-       * ==================================================== */
+      /* 4. Stat Bar Animated Counters */
       const statSection = document.getElementById('statBarSection');
       const statCounters = document.querySelectorAll('.stat-counter');
       let statsAnimated = false;
@@ -2584,10 +2819,7 @@
         runStatCounters();
       }
 
-
-      /* ====================================================
-       * MODULE 5: LIVE CALCULATOR WITH ROLLING NUMBER TICK
-       * ==================================================== */
+      /* 5. Live Calculator with Rolling Number Tick */
       const countryBtns = document.querySelectorAll('.calc-country-btn');
       const daysInput = document.getElementById('days-range-input');
       const daysDisplay = document.getElementById('days-display');
@@ -2663,7 +2895,6 @@
         }
       }
 
-      // Country selector
       countryBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           countryBtns.forEach(b => {
@@ -2677,7 +2908,6 @@
         });
       });
 
-      // Days Slider
       if (daysInput && daysDisplay) {
         daysInput.addEventListener('input', (e) => {
           currentDays = parseInt(e.target.value, 10);
@@ -2692,12 +2922,10 @@
               b.classList.add('bg-slate-100', 'text-slate-700');
             }
           });
-
           updateCalculator(true);
         });
       }
 
-      // Quick day buttons
       quickDayBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           quickDayBtns.forEach(b => {
@@ -2714,7 +2942,6 @@
         });
       });
 
-      // Tier buttons
       tierBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           tierBtns.forEach(b => {
@@ -2727,30 +2954,222 @@
           updateCalculator(true);
         });
       });
-
-      // Initial calc run
       updateCalculator(false);
 
-      // Copy coupon
-      const copyBtn = document.getElementById('copy-code-btn');
-      if (copyBtn) {
-        copyBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText('TABIGO10').then(() => {
-            const originalHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = '<span>ĐÃ SAO CHÉP! ✓</span>';
-            setTimeout(() => {
-              copyBtn.innerHTML = originalHTML;
-            }, 2000);
-          }).catch(() => {
-            alert('Mã ưu đãi của bạn: TABIGO10');
-          });
+      /* 5.1. Audio Synthesizer via Web Audio API */
+      let audioCtx = null;
+      let soundEnabled = true;
+
+      function getAudioContext() {
+        if (!audioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) audioCtx = new AudioContext();
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        return audioCtx;
+      }
+
+      function playTone(freq, type = 'sine', duration = 0.08, gainVal = 0.06) {
+        if (!soundEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          if (!ctx) return;
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, ctx.currentTime);
+          gain.gain.setValueAtTime(gainVal, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + duration);
+        } catch(e) {}
+      }
+
+      function playSoftClick() {
+        playTone(600, 'sine', 0.05, 0.04);
+      }
+
+      function playSuccessChime() {
+        if (!soundEnabled) return;
+        playTone(523.25, 'triangle', 0.12, 0.06); // C5
+        setTimeout(() => playTone(659.25, 'triangle', 0.18, 0.06), 80); // E5
+        setTimeout(() => playTone(783.99, 'triangle', 0.25, 0.07), 160); // G5
+      }
+
+      function playNetworkSwitchSound() {
+        if (!soundEnabled) return;
+        playTone(350, 'sawtooth', 0.06, 0.03);
+        setTimeout(() => playTone(880, 'sine', 0.14, 0.05), 60);
+      }
+
+      const soundToggleBtn = document.getElementById('soundToggleBtn');
+      const soundIcon = document.getElementById('soundIcon');
+      const soundLabel = document.getElementById('soundLabel');
+
+      if (soundToggleBtn) {
+        soundToggleBtn.addEventListener('click', () => {
+          soundEnabled = !soundEnabled;
+          if (soundIcon) soundIcon.textContent = soundEnabled ? '🔊' : '🔇';
+          if (soundLabel) soundLabel.textContent = soundEnabled ? 'Âm Thanh' : 'Đã Tắt';
+          if (soundEnabled) playSuccessChime();
         });
       }
 
+      /* 5.2. Confetti Particle Canvas */
+      const confettiCanvas = document.getElementById('confettiCanvas');
+      const confettiCtx = confettiCanvas ? confettiCanvas.getContext('2d') : null;
+      let confettiParticles = [];
+      let confettiAnimId = null;
 
-      /* ====================================================
-       * MODULE 6: 3D CIRCULAR INFINITE CAROUSEL WITH AUTO-LOOP
-       * ==================================================== */
+      function resizeConfetti() {
+        if (!confettiCanvas) return;
+        confettiCanvas.width = window.innerWidth;
+        confettiCanvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeConfetti);
+      resizeConfetti();
+
+      function triggerConfetti() {
+        if (!confettiCanvas || !confettiCtx) return;
+        resizeConfetti();
+        const colors = ['#00A8FF', '#FF9500', '#00478F', '#10B981', '#FFAA00'];
+        for (let i = 0; i < 40; i++) {
+          confettiParticles.push({
+            x: window.innerWidth * 0.5 + (Math.random() - 0.5) * 160,
+            y: window.innerHeight * 0.35 + (Math.random() - 0.5) * 80,
+            w: Math.random() * 8 + 4,
+            h: Math.random() * 6 + 3,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            vx: (Math.random() - 0.5) * 7,
+            vy: -Math.random() * 5 - 2,
+            rot: Math.random() * 360,
+            vRot: (Math.random() - 0.5) * 10,
+            opacity: 1
+          });
+        }
+        if (!confettiAnimId) renderConfetti();
+      }
+
+      function renderConfetti() {
+        if (!confettiCtx) return;
+        confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        for (let i = confettiParticles.length - 1; i >= 0; i--) {
+          const p = confettiParticles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.22; // gravity
+          p.rot += p.vRot;
+          p.opacity -= 0.015;
+
+          if (p.opacity <= 0 || p.y > window.innerHeight) {
+            confettiParticles.splice(i, 1);
+            continue;
+          }
+
+          confettiCtx.save();
+          confettiCtx.translate(p.x, p.y);
+          confettiCtx.rotate((p.rot * Math.PI) / 180);
+          confettiCtx.globalAlpha = p.opacity;
+          confettiCtx.fillStyle = p.color;
+          confettiCtx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          confettiCtx.restore();
+        }
+        if (confettiParticles.length > 0) {
+          confettiAnimId = requestAnimationFrame(renderConfetti);
+        } else {
+          confettiAnimId = null;
+          confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        }
+      }
+
+      /* 5.3. Calculator Mode Switcher: Custom Slider vs AI Match (Chợ 3M) */
+      const calcTabSlider = document.getElementById('calc-tab-slider');
+      const calcTabAi = document.getElementById('calc-tab-ai');
+      const calcAiContainer = document.getElementById('calc-ai-container');
+      const aiPersonaCards = document.querySelectorAll('.ai-persona-card');
+      const aiRecTitle = document.getElementById('ai-recommendation-title');
+
+      if (calcTabSlider && calcTabAi && calcAiContainer) {
+        calcTabSlider.addEventListener('click', () => {
+          calcTabSlider.className = 'btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-black transition-all bg-white text-tabi-navy shadow-xs flex items-center justify-center gap-1.5 cursor-pointer';
+          calcTabAi.className = 'btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-bold transition-all text-slate-500 hover:text-tabi-navy flex items-center justify-center gap-1.5 cursor-pointer';
+          calcAiContainer.classList.add('hidden');
+          playSoftClick();
+        });
+
+        calcTabAi.addEventListener('click', () => {
+          calcTabAi.className = 'btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-black transition-all bg-white text-tabi-navy shadow-xs flex items-center justify-center gap-1.5 cursor-pointer';
+          calcTabSlider.className = 'btn-tactile flex-1 py-2 px-3 sm:px-4 rounded-xl text-xs font-bold transition-all text-slate-500 hover:text-tabi-navy flex items-center justify-center gap-1.5 cursor-pointer';
+          calcAiContainer.classList.remove('hidden');
+          playSuccessChime();
+        });
+      }
+
+      aiPersonaCards.forEach(card => {
+        card.addEventListener('click', () => {
+          aiPersonaCards.forEach(c => c.classList.remove('is-active'));
+          card.classList.add('is-active');
+
+          const tier = parseFloat(card.dataset.tier) || 1.3;
+          const days = parseInt(card.dataset.days) || 7;
+          const countryKey = card.dataset.country;
+          const title = card.dataset.name || 'Gói AI Đề Xuất';
+
+          if (aiRecTitle) aiRecTitle.textContent = title;
+
+          currentDays = days;
+          if (daysInput) daysInput.value = currentDays;
+          if (daysDisplay) daysDisplay.textContent = currentDays;
+
+          currentMultiplier = tier;
+          tierBtns.forEach(tb => {
+            if (Math.abs(parseFloat(tb.dataset.multiplier) - tier) < 0.05) {
+              tb.classList.add('is-active', 'border-2', 'border-tabi-sky', 'bg-blue-50/70', 'shadow-xs');
+              tb.classList.remove('border-slate-200', 'bg-white');
+            } else {
+              tb.classList.remove('is-active', 'border-2', 'border-tabi-sky', 'bg-blue-50/70', 'shadow-xs');
+              tb.classList.add('border-slate-200', 'bg-white');
+            }
+          });
+
+          if (countryKey) {
+            countryBtns.forEach(cb => {
+              if (cb.dataset.country === countryKey) {
+                cb.click();
+              }
+            });
+          }
+
+          updateCalculator(true);
+          playSuccessChime();
+        });
+      });
+
+      // Copy coupon codes with sound & confetti
+      function setupCopyBtn(btnId, code) {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          btn.addEventListener('click', () => {
+            navigator.clipboard.writeText(code).then(() => {
+              const originalHTML = btn.innerHTML;
+              btn.innerHTML = '<span>ĐÃ SAO CHÉP! ✓</span>';
+              playSuccessChime();
+              triggerConfetti();
+              setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
+            }).catch(() => {
+              alert('Mã ưu đãi của bạn: ' + code);
+            });
+          });
+        }
+      }
+      setupCopyBtn('copy-code-btn', 'TABIGO10');
+      setupCopyBtn('copy-voucher-final-btn', 'TABIGO10');
+
+      /* 6. 3D Circular Destination Carousel */
       const stage = document.getElementById('dest-stage');
       const cards = Array.from(document.querySelectorAll('.dest-carousel-card'));
       const prevBtn = document.getElementById('dest-prev-btn');
@@ -2769,7 +3188,6 @@
       let carouselAutoTimer = null;
       let isCarouselHovered = false;
 
-      // Render dots
       if (dotsContainer) {
         dotsContainer.innerHTML = '';
         cards.forEach((_, idx) => {
@@ -2785,7 +3203,6 @@
         });
       }
 
-      // Circular relative offset helper (-3 to +3)
       function getCircularOffset(i, active, total) {
         let diff = (i - active) % total;
         if (diff > total / 2) diff -= total;
@@ -2803,14 +3220,11 @@
           const absOffset = Math.abs(offset);
 
           if (absOffset === 0) {
-            // Center Card (Prominent front display)
             card.style.transform = `translateX(0px) translateZ(130px) rotateY(0deg) scale(1)`;
             card.style.opacity = '1';
             card.style.zIndex = '10';
-            card.style.filter = 'none';
-            card.classList.add('is-active', 'impeccable-featured');
+            card.classList.add('is-active');
           } else if (absOffset <= 2) {
-            // Circular Flanking Cards
             const dir = offset > 0 ? 1 : -1;
             const rotate = dir * -35;
             const translateX = offset * spacing;
@@ -2821,29 +3235,21 @@
             card.style.transform = `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotate}deg) scale(${scale})`;
             card.style.opacity = `${opacity}`;
             card.style.zIndex = `${10 - absOffset}`;
-            card.style.filter = 'none';
-            card.classList.remove('is-active', 'impeccable-featured');
+            card.classList.remove('is-active');
           } else {
-            // Back of the circular carousel
             card.style.transform = `translateX(${offset * spacing}px) translateZ(-350px) scale(0.55)`;
             card.style.opacity = '0';
             card.style.zIndex = '0';
-            card.classList.remove('is-active', 'impeccable-featured');
+            card.classList.remove('is-active');
           }
         });
 
-        // Update Dots
         if (dotsContainer) {
           Array.from(dotsContainer.children).forEach((dot, idx) => {
-            if (idx === activeIndex) {
-              dot.className = 'w-7 h-2.5 rounded-full bg-tabi-sky transition-all';
-            } else {
-              dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-300 transition-all';
-            }
+            dot.className = idx === activeIndex ? 'w-7 h-2.5 rounded-full bg-tabi-sky transition-all' : 'w-2.5 h-2.5 rounded-full bg-slate-300 transition-all';
           });
         }
 
-        // Update Deals Banner
         const activeCard = cards[activeIndex];
         if (activeCard && dealTitle && dealDesc && dealFlag) {
           const country = activeCard.dataset.country || 'Quốc tế';
@@ -2851,8 +3257,7 @@
                        country.includes('Hàn') ? '🇰🇷' :
                        country.includes('Thái') ? '🇹🇭' :
                        country.includes('Châu Âu') ? '🇪🇺' :
-                       country.includes('Singapore') ? '🇸🇬' :
-                       country.includes('Đài Loan') ? '🇹🇼' : '🇺🇸';
+                       country.includes('Singapore') ? '🇸🇬' : '🇺🇸';
 
           dealFlag.textContent = flag;
           dealTitle.textContent = `Ưu đãi eSIM ${country} hôm nay`;
@@ -2874,14 +3279,8 @@
         }, 3500);
       }
 
-      if (prevBtn) prevBtn.addEventListener('click', () => {
-        setActiveCard(activeIndex - 1);
-        resetCarouselTimer();
-      });
-      if (nextBtn) nextBtn.addEventListener('click', () => {
-        setActiveCard(activeIndex + 1);
-        resetCarouselTimer();
-      });
+      if (prevBtn) prevBtn.addEventListener('click', () => { setActiveCard(activeIndex - 1); resetCarouselTimer(); });
+      if (nextBtn) nextBtn.addEventListener('click', () => { setActiveCard(activeIndex + 1); resetCarouselTimer(); });
 
       cards.forEach((card, idx) => {
         card.addEventListener('click', () => {
@@ -2917,16 +3316,13 @@
         }, { passive: true });
       }
 
-      // Live Destination Search
       if (searchInput) {
         searchInput.addEventListener('input', (e) => {
           const query = e.target.value.trim().toLowerCase();
-
           if (searchClearBtn) {
             searchClearBtn.classList.toggle('hidden', query.length === 0);
             searchClearBtn.classList.toggle('flex', query.length > 0);
           }
-
           if (!query) {
             if (searchFeedback) searchFeedback.classList.add('hidden');
             return;
@@ -2962,15 +3358,10 @@
           if (searchFeedback) searchFeedback.classList.add('hidden');
         });
       }
-
-      // Start circular auto-rotation
       updateCoverflow();
       resetCarouselTimer();
 
-
-      /* ====================================================
-       * MODULE 7: BENTO PHONE DECK (STABLE & SYNCHRONIZED)
-       * ==================================================== */
+      /* 7. Bento Phone Deck */
       const bentoSection = document.getElementById('features');
       const bentoContainer = document.getElementById('bento-cards-container');
       const bentoCards = document.querySelectorAll('.bento-feature-card');
@@ -2999,17 +3390,13 @@
         const targetScreen = document.querySelector(`.bento-screen[data-screen-index="${index}"]`);
         if (targetScreen) targetScreen.classList.add('is-active');
 
-        // Apple Watch/iOS Style Circular Gauge Animation on Screen 1
         if (index === 1) {
           const gaugeCircle = document.getElementById('bento-gauge-circle');
           if (gaugeCircle) {
             gaugeCircle.style.strokeDashoffset = '245';
-            setTimeout(() => {
-              gaugeCircle.style.strokeDashoffset = '36';
-            }, 120);
+            setTimeout(() => { gaugeCircle.style.strokeDashoffset = '36'; }, 120);
           }
         }
-
         bentoProgress = 0;
       }
 
@@ -3025,7 +3412,6 @@
         bentoContainer.addEventListener('mouseleave', () => isBentoHovered = false);
       }
 
-      // Keynote Auto-cycle (only runs when user scrolls to section)
       function startBentoKeynote() {
         if (bentoInterval) clearInterval(bentoInterval);
         bentoInterval = setInterval(() => {
@@ -3057,12 +3443,43 @@
         startBentoKeynote();
       }
 
+      /* 8. User Device Auto-Detection & Dropdown Tool */
+      const detectedText = document.getElementById('detected-device-text');
+      const screen3Device = document.getElementById('screen3-device-name');
+      const deviceSelectInput = document.getElementById('deviceSelectInput');
+      const deviceResultMsg = document.getElementById('device-result-message');
+      const deviceResultAlert = document.getElementById('device-result-alert');
 
-      /* ====================================================
-       * MODULE 8: FAQ ACCORDION (BUTTERY SMOOTH GRID EXPANSION)
-       * ==================================================== */
+      const ua = navigator.userAgent || '';
+      let detectedName = 'Thiết Bị Của Bạn';
+      if (/iPhone/.test(ua)) {
+        detectedName = 'Apple iPhone (Hỗ trợ eSIM)';
+      } else if (/iPad/.test(ua)) {
+        detectedName = 'Apple iPad Cellular';
+      } else if (/Macintosh/.test(ua)) {
+        detectedName = 'Apple Mac';
+      } else if (/Android/.test(ua)) {
+        detectedName = 'Thiết bị Android';
+      }
+
+      if (detectedText) detectedText.textContent = detectedName;
+      if (screen3Device) screen3Device.textContent = detectedName;
+
+      if (deviceSelectInput && deviceResultMsg && deviceResultAlert) {
+        deviceSelectInput.addEventListener('change', (e) => {
+          const val = e.target.value;
+          if (val === 'iphone_legacy' || val === 'samsung_a') {
+            deviceResultAlert.className = 'mt-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs font-semibold text-amber-800 flex items-center gap-2';
+            deviceResultMsg.innerHTML = '⚠️ Máy này chưa hỗ trợ eSIM. Đừng lo, bạn có thể <strong>đặt SIM vật lý TabiGo giao hỏa tốc 2 giờ tận nhà</strong> ngay trên App!';
+          } else {
+            deviceResultAlert.className = 'mt-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 flex items-center gap-2';
+            deviceResultMsg.innerHTML = '✅ Tuyệt vời! Mẫu máy này hỗ trợ eSIM 100%. Bạn chỉ mất 60 giây để cài đặt trực tiếp vào hệ thống.';
+          }
+        });
+      }
+
+      /* 9. FAQ Accordion */
       const faqItems = document.querySelectorAll('.faq-item');
-
       faqItems.forEach(item => {
         const trigger = item.querySelector('.faq-trigger');
         const content = item.querySelector('.faq-content');
@@ -3070,28 +3487,23 @@
 
         if (trigger && content) {
           trigger.addEventListener('click', () => {
-            const isOpen = content.classList.contains('is-open');
-
+            const isOpen = !content.classList.contains('hidden');
             faqItems.forEach(i => {
               const c = i.querySelector('.faq-content');
               const ch = i.querySelector('.faq-chevron');
-              if (c) c.classList.remove('is-open');
+              if (c) c.classList.add('hidden');
               if (ch) ch.style.transform = 'rotate(0deg)';
-              i.classList.remove('border-tabi-sky', 'bg-blue-50/20');
             });
 
             if (!isOpen) {
-              content.classList.add('is-open');
+              content.classList.remove('hidden');
               if (chevron) chevron.style.transform = 'rotate(180deg)';
-              item.classList.add('border-tabi-sky', 'bg-blue-50/20');
             }
           });
         }
       });
 
-      /* ====================================================
-       * MODULE 9: LIVE PURCHASE TOAST ROTATION
-       * ==================================================== */
+      /* 10. Live Purchase Toast Rotation */
       const purchaseToast = document.getElementById('livePurchaseToast');
       const toastMsg = document.getElementById('liveToastMsg');
       const toastTime = document.getElementById('liveToastTime');
@@ -3126,12 +3538,126 @@
         setInterval(showLiveToast, 12000);
       }, 4000);
 
+      /* 11. Dual-Carrier Smart Failover Simulator */
+      const carrierBtn1 = document.getElementById('carrierBtn1');
+      const carrierBtn2 = document.getElementById('carrierBtn2');
+      const failoverStatus = document.getElementById('failover-carrier-status');
+      const failoverSignal = document.getElementById('failover-signal');
+      const failoverPing = document.getElementById('failover-ping');
+      const failoverSpeed = document.getElementById('failover-speed');
+
+      if (carrierBtn1 && carrierBtn2) {
+        carrierBtn1.addEventListener('click', () => {
+          if (carrierBtn1.classList.contains('is-active')) return;
+          carrierBtn1.classList.add('is-active', 'bg-tabi-navy', 'text-white');
+          carrierBtn1.classList.remove('text-slate-400');
+          carrierBtn2.classList.remove('is-active', 'bg-tabi-navy', 'text-white');
+          carrierBtn2.classList.add('text-slate-400');
+
+          if (failoverStatus) failoverStatus.textContent = 'SoftBank 5G';
+          if (failoverSignal) failoverSignal.textContent = '5/5 Vạch 5G';
+          if (failoverPing) failoverPing.textContent = '18 ms';
+          if (failoverSpeed) failoverSpeed.textContent = '218 Mbps';
+          playNetworkSwitchSound();
+        });
+
+        carrierBtn2.addEventListener('click', () => {
+          if (carrierBtn2.classList.contains('is-active')) return;
+          carrierBtn2.classList.add('is-active', 'bg-tabi-navy', 'text-white');
+          carrierBtn2.classList.remove('text-slate-400');
+          carrierBtn1.classList.remove('is-active', 'bg-tabi-navy', 'text-white');
+          carrierBtn1.classList.add('text-slate-400');
+
+          if (failoverStatus) failoverStatus.textContent = 'Docomo 5G Max';
+          if (failoverSignal) failoverSignal.textContent = '5/5 Vạch 5G';
+          if (failoverPing) failoverPing.textContent = '16 ms';
+          if (failoverSpeed) failoverSpeed.textContent = '245 Mbps';
+          playNetworkSwitchSound();
+        });
+      }
+
+      /* 12. Tabi Points Loyalty & Rewards Simulator */
+      const loyaltySpendSlider = document.getElementById('loyalty-spend-slider');
+      const loyaltySpendDisplay = document.getElementById('loyalty-spend-display');
+      const btnFriendMinus = document.getElementById('btn-friend-minus');
+      const btnFriendPlus = document.getElementById('btn-friend-plus');
+      const loyaltyFriendsCount = document.getElementById('loyalty-friends-count');
+      const loyaltyTotalPoints = document.getElementById('loyalty-total-points');
+      const loyaltyRewardText = document.getElementById('loyalty-reward-text');
+
+      let loyaltyFriends = 2;
+
+      function updateLoyaltySimulator() {
+        const spend = loyaltySpendSlider ? parseInt(loyaltySpendSlider.value, 10) : 500000;
+        if (loyaltySpendDisplay) loyaltySpendDisplay.textContent = formatVND(spend);
+        if (loyaltyFriendsCount) loyaltyFriendsCount.textContent = loyaltyFriends;
+
+        const spendPoints = Math.floor(spend / 10000);
+        const refPoints = loyaltyFriends * 20;
+        const total = spendPoints + refPoints;
+
+        if (loyaltyTotalPoints) loyaltyTotalPoints.textContent = `${total} Pts`;
+
+        let reward = 'Voucher Giảm 20.000 đ';
+        if (total >= 200) {
+          reward = 'Tài Khoản VPN Du Lịch VIP 1 Năm (Trị Giá 350k)';
+        } else if (total >= 150) {
+          reward = 'Miễn Phí 1 Ngày eSIM Đông Nam Á (Trị Giá 150k)';
+        } else if (total >= 100) {
+          reward = 'Voucher Giảm 100.000 đ Trừ Thẳng Vào Đơn';
+        } else if (total >= 50) {
+          reward = 'Voucher Giảm 50.000 đ Trừ Thẳng Vào Đơn';
+        }
+
+        if (loyaltyRewardText) loyaltyRewardText.textContent = reward;
+      }
+
+      if (loyaltySpendSlider) {
+        loyaltySpendSlider.addEventListener('input', () => {
+          updateLoyaltySimulator();
+          playSoftClick();
+        });
+      }
+      if (btnFriendMinus) {
+        btnFriendMinus.addEventListener('click', () => {
+          if (loyaltyFriends > 0) {
+            loyaltyFriends--;
+            updateLoyaltySimulator();
+            playSoftClick();
+          }
+        });
+      }
+      if (btnFriendPlus) {
+        btnFriendPlus.addEventListener('click', () => {
+          if (loyaltyFriends < 15) {
+            loyaltyFriends++;
+            updateLoyaltySimulator();
+            playSoftClick();
+          }
+        });
+      }
+      updateLoyaltySimulator();
+
+      /* 13. Floating Mobile Quick-Bar Observer */
+      const mobileQuickBar = document.getElementById('mobileQuickBar');
+      if (mobileQuickBar && heroSection) {
+        window.addEventListener('scroll', () => {
+          const heroBottom = heroSection.getBoundingClientRect().bottom;
+          if (heroBottom < 0) {
+            mobileQuickBar.classList.add('is-visible');
+          } else {
+            mobileQuickBar.classList.remove('is-visible');
+          }
+        }, { passive: true });
+      }
+
     });
   </script>
 
-  <!-- ==================================================== -->
-  <!-- 14. FLOATING LIVE SOCIAL PROOF TOAST                 -->
-  <!-- ==================================================== -->
+  <!-- Confetti Canvas Particle Overlay -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Floating Live Social Proof Toast -->
   <div id="livePurchaseToast" class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-500 max-w-sm">
     <div class="p-3.5 pr-4 rounded-2xl bg-white/95 backdrop-blur-md border border-sky-200/90 shadow-xl shadow-sky-950/10 flex items-center gap-3">
       <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md shadow-sky-500/25">
@@ -3145,6 +3671,20 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Floating Mobile Quick-Bar (Shown when scrolling past hero on mobile) -->
+  <div id="mobileQuickBar" class="mobile-quick-bar fixed bottom-0 left-0 right-0 z-40 lg:hidden p-3 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-2xl flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2.5">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-[#00C2FF] to-[#0074E0] flex items-center justify-center text-white text-xs font-black shadow-xs">T</div>
+      <div>
+        <div class="text-xs font-black text-slate-900 leading-tight">Tabi<span class="text-tabi-sky">Go</span> <span class="text-[10px] text-amber-500 font-bold">4.9★</span></div>
+        <div class="text-[10px] text-slate-500 font-medium">Giảm 10% với mã TABIGO10</div>
+      </div>
+    </div>
+    <a href="#download" class="btn-tactile px-4 py-2 rounded-xl bg-gradient-to-r from-tabi-orange to-tabi-amber text-white text-xs font-black shadow-md shadow-orange-500/25">
+      Tải App 🚀
+    </a>
   </div>
 
 </body>
