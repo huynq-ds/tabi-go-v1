@@ -1,0 +1,18 @@
+{
+  "name": "tabi-go-showcase",
+  "version": "2.4.0",
+  "description": "TabiGo Next-Gen eSIM High-Conversion Landing Page (Option A: Smart Cyber-Travel Hub)",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "preview": "open index.html"
+  },
+  "keywords": [
+    "tabigo",
+    "esim",
+    "landing-page",
+    "3m-telecom",
+    "travel-esim"
+  ],
+  "author": "3M Ecosystem",
+  "license": "UNLICENSED"
+}
