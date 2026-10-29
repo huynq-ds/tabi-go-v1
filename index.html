@@ -88,54 +88,65 @@
 
   <style>
     :root {
-      --bg-page: #F8FAFD;
+      --bg-page: #F6FAFE;
       --bg-surface: #FFFFFF;
-      --tabi-navy: #00478F;
-      --tabi-darkNavy: #002B59;
-      --tabi-blue: #007CE8;
-      --tabi-sky: #00A8FF;
-      --tabi-cyan: #00C8FF;
-      --tabi-orange: #FF9500;
+      --tabi-navy: #003B75;
+      --tabi-darkNavy: #002244;
+      --tabi-blue: #006EDC;
+      --tabi-sky: #00A3FF;
+      --tabi-cyan: #00D5FF;
+      --tabi-orange: #FF7700;
+      --tabi-amber: #FFA800;
     }
 
     body {
       background-color: var(--bg-page);
-      color: #1e293b;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(0, 168, 255, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(255, 149, 0, 0.065) 0px, transparent 45%),
+        radial-gradient(at 50% 50%, rgba(0, 124, 232, 0.04) 0px, transparent 55%),
+        radial-gradient(at 100% 100%, rgba(0, 200, 255, 0.07) 0px, transparent 50%),
+        radial-gradient(circle at 1px 1px, rgba(0, 71, 143, 0.055) 1px, transparent 0);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+      background-attachment: fixed;
+      color: #0F172A;
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     /* ==================================================== */
-    /* IMPECCABLE MULTI-LAYER COLORED ELEVATION SHADOWS     */
+    /* LUMINOUS FROSTED GLASS & MULTI-LAYER SHADOWS        */
     /* ==================================================== */
     .impeccable-card {
-      background: #FFFFFF;
-      border: 1px solid rgba(0, 71, 143, 0.09);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
       box-shadow: 
-        0 1px 3px rgba(0, 43, 89, 0.04),
-        0 8px 24px -4px rgba(0, 43, 89, 0.08),
-        0 24px 44px -12px rgba(0, 71, 143, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+        0 2px 6px rgba(0, 43, 89, 0.03),
+        0 12px 28px -4px rgba(0, 59, 117, 0.07),
+        0 28px 56px -12px rgba(0, 163, 255, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
                   box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
                   border-color 0.3s ease;
     }
     .impeccable-card:hover {
       transform: translateY(-6px) scale(1.01);
-      border-color: rgba(0, 168, 255, 0.4);
+      border-color: rgba(0, 163, 255, 0.45);
       box-shadow: 
-        0 2px 6px rgba(0, 43, 89, 0.06),
-        0 16px 32px -4px rgba(0, 124, 232, 0.18),
-        0 36px 68px -14px rgba(0, 71, 143, 0.22),
+        0 4px 12px rgba(0, 43, 89, 0.05),
+        0 18px 38px -4px rgba(0, 110, 220, 0.16),
+        0 36px 72px -12px rgba(0, 163, 255, 0.22),
         inset 0 1px 0 rgba(255, 255, 255, 1);
     }
 
     .impeccable-featured {
-      background: #FFFFFF;
-      border: 2px solid rgba(0, 168, 255, 0.85);
+      background: rgba(255, 255, 255, 0.94);
+      border: 2px solid rgba(0, 163, 255, 0.85);
       box-shadow: 
-        0 2px 6px rgba(0, 43, 89, 0.06),
-        0 20px 42px -6px rgba(0, 124, 232, 0.28),
-        0 42px 84px -16px rgba(0, 71, 143, 0.24),
+        0 4px 12px rgba(0, 43, 89, 0.06),
+        0 20px 45px -6px rgba(0, 124, 232, 0.26),
+        0 44px 88px -16px rgba(0, 71, 143, 0.22),
         inset 0 1px 0 rgba(255, 255, 255, 1);
     }
 
@@ -149,7 +160,7 @@
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: radial-gradient(420px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(0, 168, 255, 0.15), transparent 45%);
+      background: radial-gradient(420px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(0, 168, 255, 0.18), transparent 45%);
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.35s ease;
@@ -161,21 +172,39 @@
 
     /* Glass Effect Light */
     .glass-card-light {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    /* Luxury Gradient Typography */
+    .text-gradient-navy {
+      background: linear-gradient(135deg, #002244 0%, #003B75 50%, #006EDC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-sky {
+      background: linear-gradient(135deg, #00478F 0%, #007CE8 45%, #00C8FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-orange {
+      background: linear-gradient(135deg, #FF6B00 0%, #FF9500 50%, #FFAA00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     /* Apple-style Animated Shimmer Headlines */
     .shimmer-text-sky {
-      background: linear-gradient(120deg, #00478F 0%, #007CE8 30%, #00C8FF 50%, #007CE8 70%, #00478F 100%);
+      background: linear-gradient(120deg, #003B75 0%, #007CE8 30%, #00D5FF 50%, #007CE8 70%, #003B75 100%);
       background-size: 250% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: textShimmer 6s ease-in-out infinite;
     }
     .shimmer-text-orange {
-      background: linear-gradient(120deg, #FF6B00 0%, #FF9500 35%, #FFAA00 50%, #FF9500 70%, #FF6B00 100%);
+      background: linear-gradient(120deg, #FF5500 0%, #FF8800 35%, #FFAE00 50%, #FF8800 70%, #FF5500 100%);
       background-size: 250% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -185,6 +214,55 @@
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
+    }
+
+    /* Titanium Store Buttons */
+    .btn-store-titanium {
+      background: linear-gradient(180deg, #1A2433 0%, #0B111C 100%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 10px 24px -4px rgba(11, 17, 28, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-store-titanium:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 168, 255, 0.6);
+      box-shadow: 0 14px 32px -4px rgba(0, 124, 232, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    /* Holographic Iridescent QR Card */
+    .qr-holo-card {
+      position: relative;
+      padding: 3px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #00C8FF 0%, #007CE8 50%, #FF9500 100%);
+      box-shadow: 0 8px 24px -4px rgba(0, 110, 220, 0.22);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .qr-holo-card:hover {
+      transform: scale(1.04) rotate(-1deg);
+      box-shadow: 0 14px 32px -4px rgba(0, 168, 255, 0.35);
+    }
+    .qr-holo-inner {
+      background: #FFFFFF;
+      border-radius: 17px;
+      padding: 8px;
+    }
+
+    /* Category Pill Badge */
+    .luxury-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 168, 255, 0.25);
+      box-shadow: 0 2px 10px rgba(0, 110, 220, 0.08);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
     /* ==================================================== */
@@ -357,16 +435,32 @@
                   box-shadow 0.35s ease,
                   background 0.35s ease;
     }
-    .bento-feature-card:hover,
+    .bento-feature-card:hover {
+      border-color: rgba(0, 168, 255, 0.5);
+      background: #F8FBFE;
+      transform: translateX(6px);
+      box-shadow: 
+        0 2px 8px rgba(0, 43, 89, 0.05),
+        0 14px 30px -6px rgba(0, 124, 232, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+    }
     .bento-feature-card.is-active {
-      border-color: #00A8FF;
-      background: #F0F7FD;
+      border-color: #00A3FF;
+      background: linear-gradient(135deg, rgba(235, 246, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
       transform: translateX(8px);
       box-shadow: 
-        0 2px 8px rgba(0, 43, 89, 0.06),
-        0 16px 36px -6px rgba(0, 124, 232, 0.24),
-        0 28px 56px -12px rgba(0, 71, 143, 0.18),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
+        0 4px 16px rgba(0, 43, 89, 0.06),
+        0 20px 42px -6px rgba(0, 124, 232, 0.22),
+        inset 4px 0 0 #00A3FF;
+    }
+
+    /* Active country button gradient */
+    .calc-country-btn.is-active {
+      background: linear-gradient(135deg, #0056B3 0%, #0088FF 100%) !important;
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 8px 20px -3px rgba(0, 110, 220, 0.38) !important;
+      transform: translateY(-2px);
     }
     .bento-progress-track {
       position: absolute;
@@ -590,23 +684,30 @@
           <!-- Left Column: Value Proposition (7 cols) -->
           <div class="lg:col-span-7 flex flex-col items-start text-left z-20">
             
-            <!-- Clean 3-Line Kinetic Headline (Balanced Architecture - Standard Image 3) -->
-            <h1 class="apple-reveal text-3xl sm:text-5xl lg:text-[48px] font-black tracking-tight leading-[1.18] text-tabi-darkNavy mb-5">
-              <span>Chạm Là Có <span class="text-tabi-blue">Internet</span></span><br>
-              <span><span class="text-tabi-blue">Toàn Cầu</span> – Kích Hoạt eSIM</span><br>
-              <span>Du Lịch Trong <span class="text-tabi-orange">1 Phút</span></span>
+            <!-- Luxury Luminous Category Pill Badge -->
+            <div class="apple-reveal luxury-pill-badge mb-4">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-tabi-blue">eSIM Du Lịch 150+ Quốc Gia</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded-full bg-orange-100 text-tabi-orange font-black">Ưu đãi -10%</span>
+            </div>
+
+            <!-- Clean 3-Line Kinetic Headline with Multi-Stop Gradient Typography -->
+            <h1 class="apple-reveal text-3xl sm:text-5xl lg:text-[49px] font-black tracking-tight leading-[1.16] text-slate-900 mb-5">
+              <span>Chạm Là Có <span class="text-gradient-sky">Internet Toàn Cầu</span></span><br>
+              <span>Kích Hoạt eSIM Du Lịch</span><br>
+              <span>Chỉ Trong <span class="text-gradient-orange">1 Phút Siêu Tốc</span></span>
             </h1>
 
-            <!-- Subtitle (2 Balanced Lines - Standard Image 3) -->
+            <!-- Subtitle (2 Balanced Lines) -->
             <p class="apple-reveal delay-100 text-sm sm:text-base text-slate-600 leading-relaxed mb-7 max-w-xl font-normal">
               Ứng dụng mua eSIM &amp; SIM vật lý giá gốc cho 150+ quốc gia.<br class="hidden sm:inline">
               Không lo tháo SIM, không cước chuyển vùng đắt đỏ, kết nối Internet ngay khi hạ cánh.
             </p>
 
-            <!-- Store CTA Buttons (Row 1 - Spacious & Tactile - Standard Image 3) -->
+            <!-- Store CTA Buttons (Row 1 - Luxury Dark Titanium Finish) -->
             <div class="apple-reveal delay-200 flex flex-wrap items-center gap-3.5 mb-6">
               <!-- Apple App Store -->
-              <a href="#download" class="btn-tactile inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white shadow-lg shadow-slate-900/15 hover:shadow-xl transition-all hover:-translate-y-0.5">
+              <a href="#download" class="btn-tactile btn-store-titanium inline-flex items-center gap-3 px-5 py-3 rounded-2xl text-white">
                 <svg class="w-6 h-6 text-white fill-current shrink-0" viewBox="0 0 24 24">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.81 1.43-.59.68-1.12 1.76-.98 2.79 1.07.08 2.16-.63 2.78-1.38z"/>
                 </svg>
@@ -617,7 +718,7 @@
               </a>
 
               <!-- Google Play -->
-              <a href="#download" class="btn-tactile inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white shadow-lg shadow-slate-900/15 hover:shadow-xl transition-all hover:-translate-y-0.5">
+              <a href="#download" class="btn-tactile btn-store-titanium inline-flex items-center gap-3 px-5 py-3 rounded-2xl text-white">
                 <svg class="w-6 h-6 text-white fill-current shrink-0" viewBox="0 0 24 24">
                   <path d="M3.609 1.814L13.792 12 3.61 22.186a1.59 1.59 0 0 1-.61-.914V2.728c.118-.363.33-.679.609-.914zm11.233 11.233l2.36 2.36-11.834 6.78 9.474-9.14zm0-2.094L5.368 1.813l11.834 6.781-2.36 2.36zm1.096 1.047l3.87-2.218a1.23 1.23 0 0 1 0 2.136l-3.87 2.218-1.047-1.068 1.047-1.068z"/>
                 </svg>
@@ -628,35 +729,43 @@
               </a>
             </div>
 
-            <!-- Desktop QR Code Block (Row 2 - Clean & Uncluttered - Standard Image 3) -->
+            <!-- Desktop QR Code Block (Row 2 - Holographic Border) -->
             <div class="apple-reveal delay-200 flex items-center gap-3.5 mb-7">
-              <div class="w-16 h-16 p-2 bg-white rounded-2xl border border-slate-200/90 shadow-md shadow-slate-200/60 flex items-center justify-center shrink-0 hover:scale-105 transition-transform">
-                <svg class="w-full h-full text-tabi-navy" viewBox="0 0 100 100" fill="currentColor">
-                  <rect x="0" y="0" width="30" height="30" rx="4" fill="#00478F" />
-                  <rect x="5" y="5" width="20" height="20" rx="2" fill="#fff" />
-                  <rect x="9" y="9" width="12" height="12" fill="#00478F" />
-                  <rect x="70" y="0" width="30" height="30" rx="4" fill="#00478F" />
-                  <rect x="75" y="5" width="20" height="20" rx="2" fill="#fff" />
-                  <rect x="79" y="9" width="12" height="12" fill="#00478F" />
-                  <rect x="0" y="70" width="30" height="30" rx="4" fill="#00478F" />
-                  <rect x="5" y="75" width="20" height="20" rx="2" fill="#fff" />
-                  <rect x="9" y="79" width="12" height="12" fill="#00478F" />
-                  <rect x="40" y="10" width="8" height="8" fill="#00A8FF" />
-                  <rect x="52" y="10" width="8" height="8" fill="#00478F" />
-                  <rect x="10" y="42" width="8" height="8" fill="#00478F" />
-                  <rect x="24" y="42" width="8" height="8" fill="#FF9500" />
-                  <rect x="38" y="38" width="24" height="24" rx="4" fill="#00A8FF" />
-                  <rect x="70" y="42" width="8" height="8" fill="#00478F" />
-                  <rect x="84" y="42" width="8" height="8" fill="#00478F" />
-                  <rect x="40" y="70" width="8" height="8" fill="#00478F" />
-                  <rect x="52" y="70" width="8" height="8" fill="#FF9500" />
-                  <rect x="70" y="70" width="8" height="8" fill="#00478F" />
-                  <rect x="84" y="84" width="8" height="8" fill="#00A8FF" />
-                </svg>
+              <div class="qr-holo-card shrink-0">
+                <div class="qr-holo-inner w-16 h-16 flex items-center justify-center">
+                  <svg class="w-full h-full text-tabi-navy" viewBox="0 0 100 100" fill="currentColor">
+                    <rect x="0" y="0" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="5" y="5" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="9" y="9" width="12" height="12" fill="#00478F" />
+                    <rect x="70" y="0" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="75" y="5" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="79" y="9" width="12" height="12" fill="#00478F" />
+                    <rect x="0" y="70" width="30" height="30" rx="4" fill="#00478F" />
+                    <rect x="5" y="75" width="20" height="20" rx="2" fill="#fff" />
+                    <rect x="9" y="79" width="12" height="12" fill="#00478F" />
+                    <rect x="40" y="10" width="8" height="8" fill="#00A8FF" />
+                    <rect x="52" y="10" width="8" height="8" fill="#00478F" />
+                    <rect x="10" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="24" y="42" width="8" height="8" fill="#FF9500" />
+                    <rect x="38" y="38" width="24" height="24" rx="4" fill="#00A8FF" />
+                    <rect x="70" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="84" y="42" width="8" height="8" fill="#00478F" />
+                    <rect x="40" y="70" width="8" height="8" fill="#00478F" />
+                    <rect x="52" y="70" width="8" height="8" fill="#FF9500" />
+                    <rect x="70" y="70" width="8" height="8" fill="#00478F" />
+                    <rect x="84" y="84" width="8" height="8" fill="#00A8FF" />
+                  </svg>
+                </div>
               </div>
-              <p class="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed max-w-[210px]">
-                Dùng camera điện thoại quét để tải App tức thì
-              </p>
+              <div class="text-left">
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50/90 border border-blue-200/90 text-[10px] font-bold text-tabi-blue mb-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                  <span>Quét QR nhận mã TABIGO10</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed max-w-[210px]">
+                  Dùng camera điện thoại quét để tải App tức thì
+                </p>
+              </div>
             </div>
 
             <!-- Friendly Social Proof Signals (Row 3) -->
@@ -820,13 +929,14 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-12 apple-reveal">
-          <span class="text-xs font-bold text-tabi-navy uppercase tracking-widest bg-blue-100 px-3.5 py-1.5 rounded-full border border-blue-200">
-            VẤN ĐỀ CỦA SIM TRUYỀN THỐNG
-          </span>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-tabi-darkNavy mt-3 tracking-tight">
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            <span class="text-rose-600">Nỗi Đau SIM Vật Lý Cũ</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2 tracking-tight">
             Chuyến Đi Du Lịch Từng Khiến Bạn <span class="shimmer-text-orange">Ức Chế?</span>
           </h2>
-          <p class="text-slate-600 mt-2 text-xs sm:text-sm font-medium">
+          <p class="text-slate-600 mt-2.5 text-xs sm:text-sm font-medium">
             Những rắc rối kinh điển với SIM vật lý tại sân bay nước ngoài khiến bạn lãng phí hàng giờ quý báu ngay khi vừa hạ cánh.
           </p>
         </div>
@@ -914,9 +1024,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-10 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-orange mb-2 block">CÔNG CỤ BÁO GIÁ MINH BẠCH</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Tính Cước eSIM Du Lịch Tự Động
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+            <span class="text-amber-700">Công Cụ Báo Giá Minh Bạch</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Tính Cước eSIM Du Lịch <span class="text-gradient-sky">Tự Động &amp; Giá Gốc</span>
           </h2>
           <p class="text-slate-600 text-sm sm:text-base font-medium">
             Tự chọn số ngày đi &amp; dung lượng data mong muốn. Báo giá tức thì theo tiền Việt Nam Đồng, không phát sinh chi phí ẩn.
@@ -1031,29 +1144,32 @@
             </div>
           </div>
 
-          <!-- Dynamic Result Box with Ticking Numbers -->
-          <div class="mt-8 p-6 rounded-2xl bg-gradient-to-br from-blue-50/90 via-white to-blue-50/90 border border-blue-200/90 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div>
+          <!-- Dynamic Result Box (Midnight Sapphire Fintech Card) -->
+          <div class="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#002244] via-[#003B75] to-[#005AB5] text-white border border-white/15 shadow-2xl shadow-blue-950/30 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <!-- Ambient cyan light glow in corner -->
+            <div class="absolute -right-12 -bottom-12 w-52 h-52 bg-cyan-400/20 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="relative z-10">
               <div class="flex items-center gap-2">
-                <span class="text-xs font-bold text-slate-500 uppercase">TỔNG CHI PHÍ DỰ KIẾN:</span>
-                <span class="text-xs font-bold text-slate-400 line-through" id="calc-original-price">285.000 đ</span>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">-20% Ưu Đãi</span>
+                <span class="text-xs font-bold text-sky-200 uppercase tracking-wider">TỔNG CHI PHÍ DỰ KIẾN:</span>
+                <span class="text-xs font-bold text-slate-300 line-through" id="calc-original-price">285.000 đ</span>
+                <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-400 text-slate-950">-20% Ưu Đãi</span>
               </div>
-              <div class="flex items-baseline gap-2 mt-1">
-                <span class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight transition-transform duration-200" id="calc-final-price">227.500 đ</span>
-                <span class="text-xs font-semibold text-slate-500">(khoảng <span id="calc-daily-price">32.500 đ</span> / ngày)</span>
+              <div class="flex items-baseline gap-2 mt-1.5">
+                <span class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight transition-transform duration-200" id="calc-final-price">227.500 đ</span>
+                <span class="text-xs font-semibold text-sky-100">(khoảng <span id="calc-daily-price" class="font-bold text-amber-300">32.500 đ</span> / ngày)</span>
               </div>
-              <p class="text-xs text-tabi-blue font-bold mt-1.5 flex items-center gap-1">
+              <p class="text-xs text-sky-200 font-bold mt-2 flex items-center gap-1.5">
                 <span>🎁 Nhận ngay</span>
-                <span id="calc-points-display" class="underline">+23 Điểm Tabi</span>
+                <span id="calc-points-display" class="underline text-amber-300 font-black">+23 Điểm Tabi</span>
                 <span>tích lũy đổi quà chuyến sau!</span>
               </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
-              <a href="#download" class="btn-tactile w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-black text-sm text-white bg-gradient-to-r from-tabi-orange to-tabi-amber hover:from-tabi-coral hover:to-tabi-orange transition-all shadow-lg shadow-tabi-orange/30 hover:scale-105 active:scale-95 text-center">
+            <div class="relative z-10 flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+              <a href="#download" class="btn-tactile w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl font-black text-sm text-white bg-gradient-to-r from-tabi-orange via-amber-500 to-tabi-orange hover:from-amber-500 hover:to-tabi-orange transition-all shadow-xl shadow-orange-500/35 hover:scale-105 active:scale-95 text-center">
                 <span>Mua Gói Này Ngay</span>
-                <span>👉</span>
+                <span class="text-base">🚀</span>
               </a>
             </div>
           </div>
@@ -1070,9 +1186,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-10 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-blue mb-2 block">150+ QUỐC GIA TOÀN CẦU</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Điểm Đến Được Yêu Thích Nhất
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+            <span class="text-tabi-blue">150+ Quốc Gia Toàn Cầu</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Điểm Đến Được <span class="text-gradient-sky">Yêu Thích Nhất</span>
           </h2>
           <p class="text-slate-600 text-sm sm:text-base font-medium">
             Tự động xoay tròn tuần hoàn. Vuốt ngang hoặc tìm kiếm để khám phá các gói cước 5G tốc độ cao.
@@ -1324,9 +1443,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-14 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-blue mb-2 block">CÔNG NGHỆ VƯỢT TRỘI</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Trải Nghiệm Du Lịch Đỉnh Cao Cùng TabiGo
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-tabi-blue">Công Nghệ Vượt Trội</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Trải Nghiệm Du Lịch Đỉnh Cao Cùng <span class="text-gradient-sky">TabiGo</span>
           </h2>
           <p class="text-slate-600 text-sm sm:text-base font-medium">
             Bấm chọn từng tính năng bên dưới để xem trực tiếp màn hình hoạt động bên trong ứng dụng TabiGo.
@@ -1692,9 +1814,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-12 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-orange mb-2 block">QUY TRÌNH SIÊU ĐƠN GIẢN</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Cài Đặt eSIM Trong 1 Phút
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            <span class="text-tabi-orange">Quy Trình Siêu Đơn Giản</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Cài Đặt eSIM Trong <span class="text-gradient-orange">1 Phút Siêu Tốc</span>
           </h2>
           <p class="text-slate-600 text-sm sm:text-base font-medium">
             Không cần kỹ thuật phức tạp. Bạn có thể cài đặt ngay tại nhà trước khi bay hoặc trong phòng chờ sân bay.
@@ -1747,13 +1872,16 @@
     <!-- ==================================================== -->
     <!-- 9. REAL TRAVELER REVIEWS (IMPECCABLE CARDS)          -->
     <!-- ==================================================== -->
-    <section id="reviews" class="py-16 sm:py-20 relative bg-white">
+    <section id="reviews" class="py-16 sm:py-20 relative bg-white/70 backdrop-blur-xs">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-12 apple-reveal">
-          <span class="text-xs font-bold uppercase tracking-widest text-tabi-blue mb-2 block">TRẢI NGHIỆM THỰC TẾ</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-tabi-navy tracking-tight mb-2">
-            Du Khách Nói Gì Về TabiGo?
+          <div class="luxury-pill-badge mb-3">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+            <span class="text-tabi-blue">Đánh Giá Thực Tế</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2 mb-2">
+            Hơn 500.000+ Du Khách <span class="text-gradient-sky">Nói Gì Về TabiGo?</span>
           </h2>
           <p class="text-slate-600 text-sm sm:text-base font-medium">
             Hơn 500,000+ du khách và travel blogger đã tin tưởng kết nối cùng TabiGo khắp năm châu.
@@ -2799,7 +2927,63 @@
         }
       });
 
+      /* ====================================================
+       * MODULE 9: LIVE PURCHASE TOAST ROTATION
+       * ==================================================== */
+      const purchaseToast = document.getElementById('livePurchaseToast');
+      const toastMsg = document.getElementById('liveToastMsg');
+      const toastTime = document.getElementById('liveToastTime');
+
+      const recentPurchases = [
+        { msg: "Du khách vừa kích hoạt eSIM Nhật Bản 5G tại Tokyo", time: "1 phút trước" },
+        { msg: "Khách hàng đặt gói Châu Âu 33 Nước (10GB)", time: "3 phút trước" },
+        { msg: "Đơn hàng eSIM Hàn Quốc 5G hoàn tất thanh toán", time: "5 phút trước" },
+        { msg: "Du khách mua gói eSIM Thái Lan 5G không giới hạn", time: "7 phút trước" },
+        { msg: "Vừa giao SIM vật lý hỏa tốc tại sân bay Nội Bài", time: "9 phút trước" }
+      ];
+      let purchaseIdx = 0;
+
+      function showLiveToast() {
+        if (!purchaseToast || !toastMsg || !toastTime) return;
+        const current = recentPurchases[purchaseIdx];
+        toastMsg.innerText = current.msg;
+        toastTime.innerText = current.time;
+
+        purchaseToast.classList.remove('translate-y-24', 'opacity-0');
+        purchaseToast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          purchaseToast.classList.remove('translate-y-0', 'opacity-100');
+          purchaseToast.classList.add('translate-y-24', 'opacity-0');
+          purchaseIdx = (purchaseIdx + 1) % recentPurchases.length;
+        }, 4500);
+      }
+
+      setTimeout(() => {
+        showLiveToast();
+        setInterval(showLiveToast, 12000);
+      }, 4000);
+
     });
   </script>
+
+  <!-- ==================================================== -->
+  <!-- 14. FLOATING LIVE SOCIAL PROOF TOAST                 -->
+  <!-- ==================================================== -->
+  <div id="livePurchaseToast" class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-500 max-w-sm">
+    <div class="p-3.5 pr-4 rounded-2xl bg-white/95 backdrop-blur-md border border-sky-200/90 shadow-xl shadow-sky-950/10 flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-md shadow-sky-500/25">
+        ⚡
+      </div>
+      <div class="text-left">
+        <div class="text-xs font-bold text-slate-800" id="liveToastMsg">Du khách vừa mua eSIM Nhật Bản 5G</div>
+        <div class="text-[10px] text-slate-400 font-medium flex items-center gap-1.5 mt-0.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="liveToastTime">1 phút trước</span> • <span>Đã kích hoạt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

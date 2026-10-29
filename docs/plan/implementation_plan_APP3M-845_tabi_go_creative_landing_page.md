@@ -92,6 +92,16 @@ Theo phản hồi mới nhất của người dùng kèm hình ảnh thực tế
   - **Footer:** Đồng bộ SVG App Icon và Typography với màu chữ trắng/xanh tương thích hoàn hảo trên nền tối `bg-slate-900`.
   - Đã commit và đẩy phiên bản mới lên GitHub repository `huynq-ds/tabi-go`.
 
+### 0.5. Đột Phá Thẩm Mỹ: Thoát Khỏi Giao Diện "Mặc Định", Nâng Cấp Luxury Daylight & Materiality (Iteration 5)
+- **Vấn đề phản hồi:** Giao diện trước đó còn bị "mặc định quá" (quá nhiều nền trắng phẳng, thẻ card chữ nhật đơn giản, thiếu độ rung màu và chiều sâu thẩm mỹ của các sản phẩm công nghệ cao cấp).
+- **Bộ giải pháp nâng cấp toàn diện (Apple & Linear Grade):**
+  1. **Nền Aurora Mesh & Dot-Matrix:** Thay thế nền phẳng `#F8FAFD` bằng nền living canvas kết hợp 4 cụm ánh sáng cực quang (Aurora) đa tầng (Sky Blue, Warm Sunlight Amber, Cyan) và lớp vân lưới chấm công nghệ micro-dot 28px tinh xảo, tạo chiều sâu thị giác vô tận.
+  2. **Chất liệu Luminous Frosted Glass:** Toàn bộ thẻ card nâng cấp lên kính mờ phủ tuyết (`backdrop-filter: blur(20px)`), viền phản quang kép `inset 0 1px 0 rgba(255, 255, 255, 1)` và đổ bóng khuếch tán đa sắc màu (cyan/navy tint) phản chiếu khi hover.
+  3. **Multi-Stop Gradient Typography:** Tiêu đề các mục lớn được xử lý text-gradient đa tầng (`text-gradient-sky`, `text-gradient-orange`) đi kèm huy hiệu danh mục phát sáng (`luxury-pill-badge`) với đèn nhấp nháy xanh emerald/amber.
+  4. **Nút Store Titanium & Holographic QR:** Bộ nút Store được thiết kế theo chất liệu kim loại Dark Titanium cao cấp; thẻ QR Code sở hữu đường viền biến sắc Holographic đa góc cạnh.
+  5. **Showstopper Fintech Card:** Khung hiển thị tổng chi phí dự kiến trong bộ tính cước được biến hóa thành thẻ Midnight Sapphire sang trọng với điểm nhấn vàng hoàng kim, biến khối tính giá thành tâm điểm thu hút chuyển đổi mạnh mẽ nhất trang.
+  6. **Live Purchase Social Proof Toast:** Thêm hộp thông báo thời gian thực góc trái dưới màn hình mô phỏng đơn hàng du khách vừa kích hoạt eSIM, tăng độ tin cậy và kích thích thôi thúc hành động (FOMO).
+
 Nhóm phát triển đã tiến hành mổ xẻ toàn diện mã nguồn (7.850+ dòng) và trải nghiệm thực tế trên trang `https://tabigo-landing-v2.pages.dev/`. Dưới đây là 4 "tử huyệt" khiến sản phẩm chưa thuyết phục được Ban Lãnh Đạo:
 
 ```
