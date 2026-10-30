@@ -124,24 +124,6 @@ Theo phản hồi mới nhất của người dùng kèm hình ảnh thực tế
   6. **Đồng Bộ Hoàn Toàn Với Git & 0 Phụ Thuộc WebGL Nặng:**
      - Giữ vững hiệu năng 60 FPS mượt mà tuyệt đối trên mọi trình duyệt, không cần tải bất kỳ thư viện ngoài nào.
 
-### 0.7. Tối Ưu Hóa Độ Mượt Các Khối Item Box & Micro-Cascade Staggering (Iteration 7)
-- **Vấn đề phản hồi:** Các khối hiển thị item box (stat cards, pain point cards, step cards, review cards, FAQ items) còn hơi gắt hoặc chưa đạt độ trôi chảy mượt mà tối đa khi cuộn và tương tác chuột.
-- **Bộ giải pháp tinh chỉnh chuyên sâu:**
-  1. **Tối ưu hóa Optical Blur & Displacement (`.apple-reveal`):**
-     - Giảm độ mờ quang học từ `blur(14px)` xuống `blur(8px)` và cự ly trượt từ `36px` về `22px` (`scale: 0.985`), giúp quá trình lấy nét nhẹ nhàng, triệt tiêu hoàn toàn hiện tượng drop frame hoặc repaint nặng trên card có kính mờ và bóng đa tầng.
-     - Thời lượng điều chỉnh về 0.75s với đường cong `cubic-bezier(0.16, 1, 0.3, 1)`.
-  2. **Tách biệt Transition Xuất Hiện và Hover Response:**
-     - Thiết lập quy tắc `.apple-reveal.is-visible.impeccable-card`: ngay sau khi đã xuất hiện, thẻ chuyển ngay sang cơ chế hover siêu nhạy `0.32s` (thay vì bị giữ transition 0.95s dài lê thê), phản hồi xúc giác tức thì khi rê chuột.
-     - Loại bỏ `scale(1.01)` khi hover để loại bỏ hiện tượng rung điểm ảnh (sub-pixel jitter), thay bằng `translateY(-5px)` thuần 3D mượt như nhung.
-  3. **Phân Rã Chuỗi Delay Waterfall Tự Nhiên (Zero-Clustering):**
-     - Xóa bỏ việc nhóm cặp card theo lô (`delay-100`, `delay-100`, `delay-200`, `delay-200`).
-     - Áp dụng chuỗi độ trễ thác đổ nối tiếp: `delay-75` -> `delay-150` -> `delay-225` -> `delay-300` -> `delay-375` cho mọi lưới 3, 4 và 5 card.
-  4. **3D Micro-Tilt Trên Mọi Khối Item Box:**
-     - Mở rộng thuật toán tính góc nghiêng 3D (`perspective(800px) translateY(-5px) rotateX/rotateY`) cho toàn bộ thẻ `.impeccable-card`, tạo cảm giác vật lý không gian sống động khi di chuyển chuột qua từng hộp item.
-  5. **Mượt Hóa Tuyệt Đối Khối FAQ Accordion (CSS Grid 0fr -> 1fr):**
-     - Loại bỏ hành vi mở đột ngột bằng `class="hidden"`.
-     - Thay thế bằng CSS Grid Animation (`grid-template-rows: 0fr` sang `grid-template-rows: 1fr`) thời lượng 0.38s, mở ra và cuộn lại êm ái như rèm lụa cùng biểu tượng mũi tên xoay 180° nhịp nhàng.
-
 Nhóm phát triển đã tiến hành mổ xẻ toàn diện mã nguồn (7.850+ dòng) và trải nghiệm thực tế trên trang `https://tabigo-landing-v2.pages.dev/`. Dưới đây là 4 "tử huyệt" khiến sản phẩm chưa thuyết phục được Ban Lãnh Đạo:
 
 ```
